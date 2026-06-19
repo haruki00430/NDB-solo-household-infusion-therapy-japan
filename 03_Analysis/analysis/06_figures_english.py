@@ -141,7 +141,7 @@ _plot_stratum(ax2b, df_low,  model_low,  '#5B9BD5',
               f"Low elderly solo HH rate (<{median_rate:.1f}%, N = {len(df_low)})")
 
 fig2.suptitle(
-    "Figure 2. Stratified Analysis by Median Elderly Solo Household Rate",
+    "Stratified Analysis by Median Elderly Solo Household Rate",
     fontsize=13, fontweight='bold', y=1.02)
 plt.tight_layout()
 fig2.savefig(OUTPUT_DIR / "stratified_analysis.png", dpi=300, bbox_inches='tight')
@@ -183,7 +183,7 @@ p_label = "p < 0.001" if base_model.pvalues.iloc[1] < 0.001 else f"p = {base_mod
 ax3.set_xlabel("Elderly solo household rate (%)", fontsize=13)
 ax3.set_ylabel("Infusion therapy rate (per 100,000 population)", fontsize=13)
 ax3.set_title(
-    f"Figure 3. Elderly Solo Household Rate and Infusion Therapy Utilization\n"
+    f"Elderly Solo Household Rate and Infusion Therapy Utilization\n"
     f"β = {base_model.params.iloc[1]:.2f}, {p_label}, R² = {base_model.rsquared:.3f}  (N = 47 prefectures)",
     fontsize=13, fontweight='bold')
 ax3.legend(fontsize=11)
