@@ -261,7 +261,7 @@ plot_panel(
 )
 
 fig.suptitle(
-    "Supplementary Figure S2. Negative Control Analysis: General Outpatient Utilization\n"
+    "Negative Control Analysis: General Outpatient Utilization\n"
     "vs. Dehydration-Related Infusion Therapy Across 47 Japanese Prefectures",
     fontsize=12, fontweight='bold', y=1.01,
 )

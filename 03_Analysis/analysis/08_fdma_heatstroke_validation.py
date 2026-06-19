@@ -154,7 +154,7 @@ p_str1 = f"p = {m1.pvalues['fdma_per100k']:.3f}" if m1.pvalues['fdma_per100k'] >
 ax1.set_xlabel("Heatstroke ambulance transport rate (per 100,000, June–Sep 2023)", fontsize=12)
 ax1.set_ylabel("Infusion therapy rate (per 100,000)", fontsize=12)
 ax1.set_title(
-    f"Supplementary Figure S1. Heatstroke Ambulance Transport Rate and Infusion Therapy Utilization\n"
+    f"Heatstroke Ambulance Transport Rate and Infusion Therapy Utilization\n"
     f"beta = {m1.params['fdma_per100k']:.2f}, {p_str1}, r = {r1:.3f}, R² = {m1.rsquared:.3f}  (N = 47 prefectures)",
     fontsize=11, fontweight='bold')
 ax1.legend(fontsize=10)
