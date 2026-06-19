@@ -1,4 +1,4 @@
-18 June 2026
+19 June 2026
 
 The Editorial Office  
 *Journal of Epidemiology and Community Health*  
@@ -8,7 +8,16 @@ BMJ Publishing Group
 
 Dear Editors,
 
-I am writing on behalf of all co-authors to submit our manuscript entitled **"Are Heat-Health Systems Socially Blind? Social Isolation and Dehydration-Related Healthcare Utilization Across Japan"** for consideration as an **Original Research Article** in the *Journal of Epidemiology and Community Health*.
+I am writing on behalf of all co-authors to resubmit our manuscript entitled **"Are Heat-Health Systems Socially Blind? Social Isolation and Dehydration-Related Healthcare Utilization Across Japan"** (Manuscript ID: jech-2026-226880) for consideration as an **Original Research Article** in the *Journal of Epidemiology and Community Health*.
+
+**Note on resubmission**
+
+This manuscript was returned on 19 June 2026 by the Editorial Production Assistant for two technical issues, which we have now fully addressed:
+
+1. **STROBE checklist**: A "Page No." column has been added to all 25 applicable items, with page numbers referring to the blinded manuscript.
+2. **Figure and table count**: The total number of figures and tables has been reduced from 8 to 5, in line with the journal's limit. Specifically: (a) Tables 2 and 3 have been merged into a single Table 2 (Panel A: univariate regression; Panel B: sensitivity analyses); (b) Figure 1 (Cook's distance plot) has been removed and its content described in the text; and (c) Supplementary Figures S1 and S2 have been combined into a single two-panel Supplementary Figure S1 (a)(b). The scientific content of the manuscript is unchanged.
+
+The resubmission package comprises five items (Table 1, Table 2, Figure 1, Figure 2, Supplementary Figure S1) plus the main manuscript, cover letter, title page, and STROBE checklist.
 
 **Background and rationale**
 
