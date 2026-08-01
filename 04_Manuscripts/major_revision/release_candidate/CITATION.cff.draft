@@ -7,14 +7,14 @@ authors:
     email: "m211039@fmu.ac.jp"
   - family-names: "Ohira"
     given-names: "Tetsuya"
-version: "2.0.0"
-date-released: "PENDING-AUTHOR-APPROVAL"
-doi: "[[ZENODO_VERSION_DOI_PENDING]]"
+version: "2.0.1"
+date-released: "2026-08-01"
+doi: "10.5281/zenodo.21739583"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20740375"
     description: "Concept DOI (all versions)"
-repository-code: "https://github.com/haruki00430/NDB_XXX_heatwave_heatstroke"
+repository-code: "https://github.com/haruki00430/NDB-solo-household-infusion-therapy-japan"
 license: MIT
 keywords:
   - heat-health surveillance
