@@ -169,6 +169,36 @@ reports/major_revision/report4_page1.png
 reports/major_revision/verification/independent_verification_OA_OD_output.txt
 
 # ----------------------------------------------------------------
+# AIエージェントの内部作業記録・作業指示書（学術アーカイブ非公開対象）
+# ----------------------------------------------------------------
+00_Docs/実施報告書_IJB投稿準備_20260623.md
+04_Manuscripts/major_revision/working/revision_decision_memo.md
+04_Manuscripts/major_revision/release_candidate/README_release_candidate.md
+04_Manuscripts/submission_package_IJB/SONNET_REPORT_01_data_and_reanalysis_result.md
+04_Manuscripts/submission_package_IJB/SONNET_WORK_ORDER_01_data_and_reanalysis.md
+04_Manuscripts/submission_package_IJB/SONNET_WORK_ORDER_02_zenodo_new_version.md
+04_Manuscripts/submission_package_IJB/SONNET_WORK_ORDER_03_old_exposure_adjustment_and_G004_audit.md
+04_Manuscripts/submission_package_IJB/SONNET_WORK_ORDER_04_branch2_manuscript_response_package.md
+04_Manuscripts/submission_package_IJB/major_revision_strategy_ja.md
+04_Manuscripts/submission_package_IJB/manuscript_dump.txt
+04_Manuscripts/submission_package_IJB/manuscript_tables_dump.txt
+04_Manuscripts/submission_package_IJB/other_refs_check.txt
+04_Manuscripts/submission_package_IJB/para_check.txt
+04_Manuscripts/submission_package_IJB/ref_list_all.txt
+04_Manuscripts/submission_package_IJB/reviewer1_comments_with_anchors.txt
+04_Manuscripts/submission_package_IJB/liljegren_patel_check.txt
+reports/major_revision/SONNET_REPORT_02_original_exposure_and_G004_audit.docx
+reports/major_revision/SONNET_REPORT_02_original_exposure_and_G004_audit.md
+reports/major_revision/SONNET_REPORT_03_branch2_revision_package.docx
+reports/major_revision/SONNET_REPORT_03_branch2_revision_package.md
+reports/major_revision/SONNET_REPORT_04_surgical_revision_correction.docx
+reports/major_revision/SONNET_REPORT_04_surgical_revision_correction.md
+reports/major_revision/SONNET_REPORT_04_surgical_revision_correction.pdf
+reports/major_revision/issues_for_author.md
+reports/major_revision/issues_for_author_archive_20260801.md
+reports/major_revision/predrafting_corrections_audit.md
+
+# ----------------------------------------------------------------
 # 例外: 再現性・監査証跡として公開する集計済みCSV（都道府県単位の解析結果、個人情報なし）
 # ----------------------------------------------------------------
 !03_Analysis/results/major_revision/**/*.csv

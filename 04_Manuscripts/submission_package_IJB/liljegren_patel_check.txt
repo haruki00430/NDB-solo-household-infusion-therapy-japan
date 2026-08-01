@@ -1,3 +1,0 @@
-37: Heatwave exposure was defined as the number of days with maximum temperature ≥35°C during June–Septe
-115: Liljegren JC, Carhart RA, Lawday P, Tschopp S, Sharp R (2008) Modeling the wet bulb globe temperatur
-125: Patel T, Mullen SP, Santee WR (2013) Comparison of methods for estimating wet-bulb globe temperature
