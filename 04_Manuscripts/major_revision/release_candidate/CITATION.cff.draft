@@ -7,9 +7,9 @@ authors:
     email: "m211039@fmu.ac.jp"
   - family-names: "Ohira"
     given-names: "Tetsuya"
-version: "2.0.1"
+version: "2.0.2"
 date-released: "2026-08-01"
-doi: "10.5281/zenodo.21739583"
+doi: "10.5281/zenodo.21739792"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.20740375"
