@@ -1,0 +1,43 @@
+﻿source,item_id,comment_summary,response_status,manuscript_location
+Editor,Editor-1,"Ensure results accurately reported, overstated conclusions rewritten, limitations fully explained",Addressed,Throughout; Limitations p.12-13
+Reviewer 1,R1-2,Prefecture-level vs individual data clarification,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-4,Is community-level social isolation an ecological factor,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-5,Spell out WBGT at first use,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-6,Explain informal monitoring,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-7,Distribute references near claims,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-9,Spell out NDB at first use,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-10,Is one year of data sufficient,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-11,How was WBGT measured/by whom,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-12,Correct interpretation of meteorological station data,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-13,Was 2023 a typical summer,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-17,Appropriate heatwave definition for Japan / JMA definition,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-18,Purpose of Patel/Liljegren citations,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-19,Reference for rapid-change-days variable,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-21,Was AC prevalence prefecture level,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-22,Aging rate vs Age wording,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-24,"Prior studies, exposure-response function, lag, linearity justification",Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-25,Why population-level over predictive multivariable model,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-26,Explain N and 4/N=0.085,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-27,What were models adjusted for,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-30,Specify rate units (12.6 per 100k?),Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-31,17 days out of how many,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-32,Comment on WBGT value (23.2),Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-33,Comment on high AC use (89.7%),Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-41,Concurrence with surveillance framing,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-42,Tone down robustness claim given AC/thirst factors,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-43,AC ownership vs use,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-44,Outreach targeting clarification,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-45,Other causes of infusion therapy,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-46,Cooling support = turn on AC? affordability,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-47,Give examples of other causes,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-48,Were SES/healthcare access/chronic disease data available at prefecture level,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-57,Check all DOIs,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-58,Wrong Miyatake DOI,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-61,Reduce decimal precision,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 1,R1-63,"Low R2, weak pattern",Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 2,R2-1,Age structure confounding - add ageing rate to same model,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 2,R2-2,Healthcare supply / treatment practice as alternative explanation,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 2,R2-3,"Stratified analysis needs fuller interpretation - nonlinearity, metro influence, confounding",Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 2,R2-4,Social factors vs climatic indicators claim not convincing - use stronger WBGT measures,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 2,R2-5,Sixfold claim invalid - raw coefficients on different scales,Addressed,See response_to_reviewers.docx for exact page/line citation
+Reviewer 2,R2-6,"Infusion not heat-specific - hypothesis-generating framing, descriptive title, XXX GitHub link, 2014/2020/2023 mismatch",Addressed,See response_to_reviewers.docx for exact page/line citation

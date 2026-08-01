@@ -5,16 +5,20 @@ e-Stat APIから都道府県別総人口（2020年国勢調査）をダウンロ
 統計表ID: 0003445170（人口等基本集計_都道府県・市区町村）
 """
 
-import requests
-import pandas as pd
-from pathlib import Path
+import os
 import time
+from pathlib import Path
+
+import pandas as pd
+import requests
+from dotenv import load_dotenv
 
 # 設定
-APP_ID = "8ee5a987b9ec70631de1977bde3afd7ebc11140d"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+load_dotenv(PROJECT_ROOT / ".env")
+APP_ID = os.environ["ESTAT_APP_ID"]
 STAT_TABLE_ID = "0003445170"  # 2020年国勢調査 人口等基本集計
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = PROJECT_ROOT / "02_Data" / "interim"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 

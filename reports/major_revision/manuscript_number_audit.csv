@@ -1,0 +1,15 @@
+﻿key,expected_value,present_in_clean_manuscript
+O-A_unstd_coef,656.2,True
+O-A_ci,326.9,True
+O-B_unstd_coef,306.1,True
+O-C_unstd_coef,94.1,True
+O-D_unstd_coef,-9.4,True
+attenuation_pct,53.3,True
+legacy_OA,723.4,False
+O-A_unstd_coef_in_response_letter,656.2,True
+O-A_ci_in_response_letter,326.9,True
+O-B_unstd_coef_in_response_letter,306.1,True
+O-C_unstd_coef_in_response_letter,94.1,True
+O-D_unstd_coef_in_response_letter,-9.4,False
+attenuation_pct_in_response_letter,53.3,True
+legacy_OA_in_response_letter,723.4,True

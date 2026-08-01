@@ -1,0 +1,136 @@
+# NDB_XXX_heatwave_heatstroke — Major Revision (IJB) 再解析設定
+# 出典: major_revision_strategy_ja.md, SONNET_WORK_ORDER_01
+# 疾患定義・年次・閾値はここに集約し、スクリプトに直書きしない。
+
+submission:
+  journal: "International Journal of Biometeorology"
+  submission_id: "0cd18650-d5db-481f-b00b-bbde3cda74f7"
+  decision: "major revision"
+  deadline: "2026-08-14"
+
+data_years:
+  outcome_fy: 2023           # NDB第10回オープンデータ G004 (点滴注射500mL以上)
+  population_denominator: "2023-10-01"   # 総人口・65歳以上人口・高齢化率の基準日（人口推計）
+  living_alone_census: 2020              # 65歳以上単独世帯人員／65歳以上人口（国勢調査）
+  healthcare_supply: 2023                # 医療施設調査（一般病床数・一般診療所数）
+  heat_wbgt: 2023                        # 環境省 公式WBGT（6月-9月）
+  aircon_prevalence: 2014                 # 探索的補足のみ、主解析からは除外
+
+wbgt:
+  thresholds: [28, 31, 33]   # 日最高WBGT threshold (do NOT call >=33 "alert days")
+  excess_baseline: 28        # cumulative excess = sum(max(daily_max_wbgt - 28, 0))
+  season_months: [6, 7, 8, 9]
+
+variables:
+  outcome:
+    name: large_volume_infusion_procedure_rate
+    definition: "G004算定回数 / 2023年10月1日総人口 * 100000"
+  primary_exposure:
+    new:
+      name: older_living_alone_pct
+      definition: "65歳以上単独世帯人員 / 65歳以上人口(2020) * 100"
+    original:
+      name: original_elderly_solo_household_pct
+      definition: "65歳以上単独世帯数 / 総世帯数(2020) * 100"
+      note: "Model 0（旧解析再現）専用。分母が異なるため新指標と混同しない。"
+  prespecified_confounders:
+    - name: ageing_rate_pct
+      definition: "65歳以上人口(2023推計) / 総人口(2023推計) * 100"
+    - name: general_hospital_beds_per_100k
+      definition: "一般病床数(2023医療施設調査) / 総人口(2023推計) * 100000"
+    - name: wbgt_days_ge28
+      definition: "都道府県内地点平均・日最高WBGT>=28の日数（2023年6-9月）"
+  sensitivity_covariates:
+    - general_clinics_per_100k
+    - wbgt_days_ge31
+    - wbgt_days_ge33
+    - wbgt_cumulative_excess_28
+    - log_population_density
+
+models:
+  model0: { exposure: original_elderly_solo_household_pct, adjust: [] }
+  model1: { exposure: older_living_alone_pct, adjust: [] }
+  model2: { exposure: older_living_alone_pct, adjust: [ageing_rate_pct] }
+  model3: { exposure: older_living_alone_pct, adjust: [ageing_rate_pct, general_hospital_beds_per_100k] }
+  model4: { exposure: older_living_alone_pct, adjust: [ageing_rate_pct, general_hospital_beds_per_100k, wbgt_days_ge28] }
+  primary_inference_model: model4
+  inference_se: HC3
+  audit_se: classical_ols
+
+sensitivity_analyses:
+  - beds_to_clinics_substitution
+  - add_log_population_density
+  - exclude_tokyo_osaka_kanagawa
+  - leave_one_prefecture_out
+  - log_transform_outcome
+  - population_weighted_wls
+  - swap_heat_metric: [wbgt_days_ge31, wbgt_days_ge33, wbgt_cumulative_excess_28]
+
+nonlinearity:
+  compare: [linear, quadratic]
+  test: [partial_F, AICc]
+  exploratory_spline_df: 3
+  median_split: "exploratory only, not primary"
+
+multiplicity:
+  primary_model: model4
+  fdr_method: benjamini_hochberg
+  applies_to: [wbgt_days_ge31, wbgt_days_ge33, wbgt_cumulative_excess_28]
+
+comparison_outcome:
+  label: "exploratory comparison-outcome analysis"  # NOT "negative control"
+  report: [standardized_beta, pearson_r, r_squared, ci95]
+  forbidden_claims: ["sixfold", "6-fold", "6倍"]
+
+join_key: prefecture_code_jis  # 都道府県名の文字列結合は使わない
+
+prefecture_codes:
+  "01": 北海道
+  "02": 青森県
+  "03": 岩手県
+  "04": 宮城県
+  "05": 秋田県
+  "06": 山形県
+  "07": 福島県
+  "08": 茨城県
+  "09": 栃木県
+  "10": 群馬県
+  "11": 埼玉県
+  "12": 千葉県
+  "13": 東京都
+  "14": 神奈川県
+  "15": 新潟県
+  "16": 富山県
+  "17": 石川県
+  "18": 福井県
+  "19": 山梨県
+  "20": 長野県
+  "21": 岐阜県
+  "22": 静岡県
+  "23": 愛知県
+  "24": 三重県
+  "25": 滋賀県
+  "26": 京都府
+  "27": 大阪府
+  "28": 兵庫県
+  "29": 奈良県
+  "30": 和歌山県
+  "31": 鳥取県
+  "32": 島根県
+  "33": 岡山県
+  "34": 広島県
+  "35": 山口県
+  "36": 徳島県
+  "37": 香川県
+  "38": 愛媛県
+  "39": 高知県
+  "40": 福岡県
+  "41": 佐賀県
+  "42": 長崎県
+  "43": 熊本県
+  "44": 大分県
+  "45": 宮崎県
+  "46": 鹿児島県
+  "47": 沖縄県
+
+metropolitan_exclusion: ["13", "27", "14"]  # 東京・大阪・神奈川

@@ -1,0 +1,3 @@
+﻿comparison,aicc_linear,aicc_quadratic,partial_f_p_value,quadratic_term_coef,quadratic_term_p
+linear_vs_quadratic,845.5675279731628,847.8647906244762,0.5225075926695795,-15.386910611184863,0.5225075926695429
+linear_vs_natural_spline_df3,845.5675279731628,847.5859055621149,0.42036970129377904,,

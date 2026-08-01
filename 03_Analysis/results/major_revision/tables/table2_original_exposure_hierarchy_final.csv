@@ -1,0 +1,5 @@
+﻿Model,Cumulative adjustment,N,Unstd. beta (HC3 95% CI),Std. beta (HC3 95% CI),p,Exposure partial R2,Adjusted R2,Max VIF,AICc
+O-A,Unadjusted (exposure only),47,"656.2 (326.9, 985.6)","0.521 (0.260, 0.783)",<0.001,0.272,0.256,1.00,853.2
+O-B,+ ageing rate,47,"306.1 (-71.3, 683.5)","0.243 (-0.057, 0.543)",0.112,0.056,0.365,1.64,847.1
+O-C,+ ageing rate + hospital beds,47,"94.1 (-302.4, 490.6)","0.075 (-0.240, 0.390)",0.642,0.004,0.386,3.01,846.9
+O-D,+ ageing rate + hospital beds + WBGT>=28d,47,"-9.4 (-493.9, 475.1)","-0.007 (-0.392, 0.377)",0.970,0.000,0.422,3.01,845.6

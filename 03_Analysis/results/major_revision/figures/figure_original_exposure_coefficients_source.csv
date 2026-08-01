@@ -1,0 +1,5 @@
+﻿model,variable,coef,se,ci_low,ci_high,p_value,se_type,coef_type,denominator
+O-A,original_elderly_solo_household_pct,656.2215828921608,168.02916748463673,326.8904662700241,985.5526995142976,9.406856010104173e-05,HC3,unstandardized,primary_2023_population
+O-B,original_elderly_solo_household_pct,306.1424530064647,192.55179411257663,-71.25212861275719,683.5370346256866,0.1118522481853463,HC3,unstandardized,primary_2023_population
+O-C,original_elderly_solo_household_pct,94.09053446984012,202.30928981114184,-302.428387297874,490.60945623755424,0.6418722919828811,HC3,unstandardized,primary_2023_population
+O-D,original_elderly_solo_household_pct,-9.410358391724005,247.19253676161364,-493.89882769158,475.078110908132,0.9696327138941258,HC3,unstandardized,primary_2023_population

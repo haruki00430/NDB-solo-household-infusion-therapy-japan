@@ -1,0 +1,4 @@
+exposure used: original_elderly_solo_household_pct
+                      outcome  pearson_r  pearson_p  r_squared  standardized_beta  std_ci_low  std_ci_high    std_p
+     primary_outcome_infusion   0.521251   0.000172   0.271702           0.521251    0.259656     0.782845 0.000094
+comparison_outcome_outpatient   0.423968   0.002980   0.179749           0.423968    0.088147     0.759789 0.013345

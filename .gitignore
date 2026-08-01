@@ -13,6 +13,7 @@ venv/
 ENV/
 .env
 .env.*
+!.env.example
 *.egg-info/
 .claude/settings.local.json
 
@@ -97,3 +98,78 @@ _*.txt
 # ----------------------------------------------------------------
 04_Manuscripts/Authors*.pdf
 04_Manuscripts/Authors *.pdf
+04_Manuscripts/submission_package_IJB/Submission guidelines*.pdf
+
+# ----------------------------------------------------------------
+# 旧JECH投稿の私信・作業フォルダ（非公開・IJB投稿とは無関係な旧履歴）
+# ----------------------------------------------------------------
+デスクトップ用/
+04_Manuscripts/submission_package/
+04_Manuscripts/Gmail - Manuscript jech-2026-226880 - returned to Author Centre.pdf
+04_Manuscripts/Gmail - jech-2026-226880 Manuscript decision Original research.pdf
+04_Manuscripts/Manuscript_heatwave_social_isolation_final.qmd
+04_Manuscripts/patch_manuscript_v2.py
+説明責任資料_JECH_論文C_20260621.md
+
+# ----------------------------------------------------------------
+# IJB投稿関連の私信（Gmail転送PDF）・重複バックアップDOCX（非公開）
+# ----------------------------------------------------------------
+04_Manuscripts/submission_package_IJB/Gmail - *.pdf
+04_Manuscripts/submission_package_IJB/manuscript_main_IJB_backup_20260623.docx
+04_Manuscripts/submission_package_IJB/manuscript_main_IJB_pre_author_year_backup.docx
+04_Manuscripts/submission_package_IJB/manuscript_main_IJB_pre_author_year_backup.docx.docx
+04_Manuscripts/submission_package_IJB/manuscript_main_IJB_v1.0_backup.docx
+04_Manuscripts/submission_package_IJB/Japan manuscript_main_IJB_anon - コピー.docx
+
+# ----------------------------------------------------------------
+# Major Revision作業用・目視QAデバッグ成果物（成果物ではなく作業ログ）
+# ----------------------------------------------------------------
+04_Manuscripts/major_revision/**/qa_pages_*/
+04_Manuscripts/major_revision/working/audit_output.txt
+04_Manuscripts/major_revision/working/check_result.txt
+04_Manuscripts/major_revision/working/check_result2.txt
+04_Manuscripts/major_revision/working/check_result3.txt
+04_Manuscripts/major_revision/working/citation_verification.txt
+04_Manuscripts/major_revision/working/dash_check.txt
+04_Manuscripts/major_revision/working/debug_out.txt
+04_Manuscripts/major_revision/working/fix_log.txt
+04_Manuscripts/major_revision/working/nos_check2.txt
+04_Manuscripts/major_revision/working/nos_debug.txt
+04_Manuscripts/major_revision/working/page_line_lookup.json
+04_Manuscripts/major_revision/working/phrase_context.txt
+04_Manuscripts/major_revision/working/phrase_context2.txt
+04_Manuscripts/major_revision/working/reference_audit_raw.json
+04_Manuscripts/major_revision/working/row_check.txt
+04_Manuscripts/major_revision/working/row_check2.txt
+04_Manuscripts/major_revision/working/row_check_display.txt
+04_Manuscripts/major_revision/final/broad_scan.txt
+04_Manuscripts/major_revision/final/caption_scan_result.txt
+04_Manuscripts/major_revision/final/check_authors_result.txt
+04_Manuscripts/major_revision/final/full_dump_v2.txt
+04_Manuscripts/major_revision/final/kenney_check.txt
+04_Manuscripts/major_revision/final/kenney_check2.txt
+04_Manuscripts/major_revision/final/line_map.txt
+04_Manuscripts/major_revision/final/marked_build_result.txt
+04_Manuscripts/major_revision/final/ndb_check.txt
+04_Manuscripts/major_revision/final/or1_structure.txt
+04_Manuscripts/major_revision/final/page16_check.png
+04_Manuscripts/major_revision/final/page5_check.png
+04_Manuscripts/major_revision/final/results_discussion_dump.txt
+04_Manuscripts/major_revision/final/thorough_claim_scan_result.txt
+
+# ----------------------------------------------------------------
+# reports/major_revision 内のデバッグログ・中間ダンプ（監査CSV・正式レポートは対象外）
+# ----------------------------------------------------------------
+reports/major_revision/g004_search_log.txt
+reports/major_revision/g004_search_log_rebuild.txt
+reports/major_revision/para6_full.txt
+reports/major_revision/para_debug.txt
+reports/major_revision/para_debug2.txt
+reports/major_revision/report4_page1.png
+reports/major_revision/verification/independent_verification_OA_OD_output.txt
+
+# ----------------------------------------------------------------
+# 例外: 再現性・監査証跡として公開する集計済みCSV（都道府県単位の解析結果、個人情報なし）
+# ----------------------------------------------------------------
+!03_Analysis/results/major_revision/**/*.csv
+!reports/major_revision/**/*.csv

@@ -1,0 +1,12 @@
+﻿Variable,Unit,N,Mean,SD,Min,Median,Max
+"Large-volume infusion therapy utilization (G004, >=500 mL)","per 100,000 (2023 population)",47,8022.18,2389.27,4231.31,7608.68,13234.07
+"Primary exposure: elderly solo household % (all households, 2020 Census)",%,47,12.58,1.9,9.4,12.26,17.8
+Alternative exposure: % of 65+ population living alone (2020 Census),%,47,17.74,3.13,12.08,17.12,26.11
+Prefectural ageing rate (2023 population estimate),%,47,31.58,3.33,22.75,31.74,39.02
+General hospital beds (2023 Survey of Medical Institutions),"per 100,000",47,794.19,148.51,508.7,800.3,1146.5
+General clinics (2023 Survey of Medical Institutions),"per 100,000",47,84.5,11.94,61.79,85.85,113.03
+"Days with daily maximum WBGT >=28C (Jun-Sep 2023, MOE official)",days,47,72.9,14.08,27.25,74.7,112.25
+Days with daily maximum WBGT >=31C,days,47,28.72,10.6,6.0,26.48,61.62
+Days with daily maximum WBGT >=33C,days,47,2.94,2.74,0.0,1.69,10.8
+Cumulative WBGT excess above 28C,degree-days,47,184.55,48.26,57.65,177.89,330.27
+Population density (2023),persons/km2,47,650.73,1221.25,64.9,259.6,6402.9

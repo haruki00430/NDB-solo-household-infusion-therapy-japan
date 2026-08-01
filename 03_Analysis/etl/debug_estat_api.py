@@ -2,10 +2,15 @@
 e-Stat APIレスポンスのデバッグ
 """
 
-import requests
+import os
 import json
+from pathlib import Path
 
-APP_ID = "8ee5a987b9ec70631de1977bde3afd7ebc11140d"
+import requests
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+APP_ID = os.environ["ESTAT_APP_ID"]
 STAT_TABLE_ID = "0003445081"
 
 url = "https://api.e-stat.go.jp/rest/3.0/app/json/getStatsData"

@@ -9,15 +9,19 @@ e-Stat APIから都道府県別「65歳以上単独世帯数」をダウンロ�
 - area=01000-47000: 47都道府県
 """
 
-import requests
-import pandas as pd
+import os
 from pathlib import Path
 
+import pandas as pd
+import requests
+from dotenv import load_dotenv
+
 # 設定
-APP_ID = "8ee5a987b9ec70631de1977bde3afd7ebc11140d"
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+load_dotenv(PROJECT_ROOT / ".env")
+APP_ID = os.environ["ESTAT_APP_ID"]
 STAT_TABLE_ID = "0003445081"
 
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = PROJECT_ROOT / "02_Data" / "interim"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 

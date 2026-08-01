@@ -2,11 +2,16 @@
 e-Stat APIで統計表のメタデータを取得
 """
 
-import requests
+import os
 import json
+from pathlib import Path
 
-# e-Stat APIキー
-APP_ID = "8ee5a987b9ec70631de1977bde3afd7ebc11140d"
+import requests
+from dotenv import load_dotenv
+
+# e-Stat APIキー（.env から読み込み。Gitにコミットしない）
+load_dotenv(Path(__file__).resolve().parents[2] / ".env")
+APP_ID = os.environ["ESTAT_APP_ID"]
 
 # 統計表ID（検索結果の1番目）
 STAT_TABLE_ID = "0003445102"

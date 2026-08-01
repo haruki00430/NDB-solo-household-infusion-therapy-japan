@@ -1,0 +1,12 @@
+﻿variable,VIF,model
+original_elderly_solo_household_pct,,model0
+older_living_alone_pct,,model1
+older_living_alone_pct,1.0623814462875631,model2
+ageing_rate_pct,1.0623814462875631,model2
+older_living_alone_pct,1.5694542116264898,model3
+ageing_rate_pct,2.979767402105484,model3
+general_hospital_beds_per_100k,2.9465913362263207,model3
+older_living_alone_pct,1.5956586849161258,model4
+ageing_rate_pct,3.389535220779346,model4
+general_hospital_beds_per_100k,2.9588315705621024,model4
+wbgt_days_ge28,1.4062693261935304,model4

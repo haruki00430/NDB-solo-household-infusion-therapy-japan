@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "NDB_XXX_heatwave_heatstroke: Prefecture-Level Measures of Older Adults Living Alone and Large-Volume Infusion Therapy Utilization in Japan"
+authors:
+  - family-names: "Saito"
+    given-names: "Haruki"
+    email: "m211039@fmu.ac.jp"
+  - family-names: "Ohira"
+    given-names: "Tetsuya"
+version: "2.0.0"
+date-released: "PENDING-AUTHOR-APPROVAL"
+doi: "[[ZENODO_VERSION_DOI_PENDING]]"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20740375"
+    description: "Concept DOI (all versions)"
+repository-code: "https://github.com/haruki00430/NDB_XXX_heatwave_heatstroke"
+license: MIT
+keywords:
+  - heat-health surveillance
+  - living alone
+  - population ageing
+  - ecological study
+  - Japan
+  - NDB Open Data
