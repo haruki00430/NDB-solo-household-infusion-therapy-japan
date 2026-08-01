@@ -1,79 +1,98 @@
 """
-Build the marked-up manuscript from the clean manuscript: adds a legend note
-and highlights substantively revised text in yellow. Given the scale of the
-Branch-2 rewrite, nearly all body content (Title through Conclusions, AI
-statement) is revised; the reference list is highlighted only where it
-changed (the corrected Miyatake DOI). This avoids Word's native tracked-
-changes feature, which can render unpredictably, per Work Order 04.
+Build the marked-up manuscript via a genuine Word document comparison
+(Application.CompareDocuments) between the originally submitted manuscript
+and the corrected clean manuscript. This shows word-level insertions
+(underlined) and deletions (struck through), which is required to preserve
+a full, granular revision history -- a coarser paragraph-level highlight
+does not show what specifically changed within a paragraph.
+
+Note: python-docx's `Paragraph.text` does not read `<w:delText>` content
+inside `<w:del>` revision runs, so inspecting a tracked-changes document
+with plain `.text` will look like text is missing/garbled even though the
+document is fully intact. Always verify via rendered PDF (or via a
+full-text helper that also reads `<w:delText>`), not via `.text` alone.
+
+Word substitutes its own localized default reviewer name (e.g. "作成者")
+in `w:author` attributes even when `Application.UserName` is set before
+comparing, so the resulting docx is post-processed to replace it with a
+neutral "Author" string.
 """
 from pathlib import Path
+import os
+import zipfile
+import shutil
 
-import docx
-from docx.enum.text import WD_COLOR_INDEX
-from docx.shared import Pt
+import win32com.client
 
 PROJECT_ROOT = Path(r"C:\Users\user\.ag-cursor-common\research_workspace\projects\NDB_Research_Hub\projects\NDB_XXX_heatwave_heatstroke")
+ORIGINAL_DOCX = PROJECT_ROOT / "04_Manuscripts" / "submission_package_IJB" / "Japan manuscript_main_IJB_anon.docx"
 CLEAN_DOCX = PROJECT_ROOT / "04_Manuscripts" / "major_revision" / "final" / "manuscript_main_IJB_major_revision_clean.docx"
 OUT_DOCX = PROJECT_ROOT / "04_Manuscripts" / "major_revision" / "final" / "manuscript_main_IJB_major_revision_marked.docx"
 
-UNCHANGED_STYLES = set()  # nothing is fully unchanged except most reference entries
+LEAKED_AUTHOR_STRINGS = ["作成者", "Author"]  # scrub any localized default; leave a clean "Author" behind
 
 
-def is_reference_paragraph(text: str) -> bool:
-    # crude heuristic: reference entries contain a year in parentheses and end with a DOI/URL or period
-    return (
-        ') (' not in text
-        and any(f"({y})" in text for y in range(1990, 2027))
-        and ('doi.org' in text or 'http' in text or text.strip().endswith('.'))
-        and len(text) > 60
+def run_word_compare():
+    word = win32com.client.DispatchEx("Word.Application")
+    word.Visible = False
+    word.UserName = "Author"
+    word.UserInitials = "AU"
+
+    doc_orig = word.Documents.Open(str(ORIGINAL_DOCX))
+    doc_rev = word.Documents.Open(str(CLEAN_DOCX))
+
+    compared = word.CompareDocuments(
+        OriginalDocument=doc_orig,
+        RevisedDocument=doc_rev,
+        Destination=2,  # wdCompareDestinationNew
+        Granularity=1,  # wdGranularityWordLevel
+        CompareFormatting=False,
+        CompareCaseChanges=True,
+        CompareWhitespace=True,
+        CompareTables=True,
+        CompareHeaders=True,
+        CompareFootnotes=True,
+        CompareTextboxes=True,
+        CompareFields=True,
+        CompareComments=False,
+        CompareMoves=True,
+        RevisedAuthor="Author",
+        IgnoreAllComparisonWarnings=True,
     )
+
+    if OUT_DOCX.exists():
+        os.remove(OUT_DOCX)
+    compared.SaveAs(str(OUT_DOCX), FileFormat=16)  # wdFormatDocumentDefault (.docx)
+    pages = compared.ComputeStatistics(2)
+
+    compared.Close(False)
+    doc_orig.Close(False)
+    doc_rev.Close(False)
+    word.Quit()
+    return pages
+
+
+def scrub_author_metadata():
+    tmp = str(OUT_DOCX) + ".tmp"
+    with zipfile.ZipFile(OUT_DOCX, "r") as zin:
+        names = zin.namelist()
+        data = {n: zin.read(n) for n in names}
+
+    target = "word/document.xml"
+    xml = data[target].decode("utf-8")
+    xml = xml.replace('w:author="作成者"', 'w:author="Author"')
+    data[target] = xml.encode("utf-8")
+
+    with zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as zout:
+        for n in names:
+            zout.writestr(n, data[n])
+    shutil.move(tmp, OUT_DOCX)
 
 
 def main():
-    document = docx.Document(CLEAN_DOCX)
-
-    # Insert legend at the very top
-    legend_after = document.paragraphs[0]  # title paragraph
-    legend_para = legend_after.insert_paragraph_before()
-    run = legend_para.add_run(
-        "MARKED-UP VERSION — REVIEWER NOTE: Highlighted (yellow) text indicates content "
-        "that was substantively revised in response to Major Revision comments (Branch 2: "
-        "attenuation of the original association after adjustment for population age "
-        "structure). Because nearly the entire manuscript body was rewritten, highlighting "
-        "is applied at the paragraph level rather than the word level. The reference list "
-        "is highlighted only where a citation was corrected (Miyatake et al., DOI). See the "
-        "accompanying point-by-point response letter for the full itemized mapping of "
-        "changes to reviewer comments."
-    )
-    run.font.size = Pt(10)
-    run.italic = True
-
-    in_references = False
-    for p in document.paragraphs:
-        style_name = p.style.name if p.style else ''
-        text = p.text.strip()
-        if style_name == 'Heading 1' and text == 'References':
-            in_references = True
-            continue
-        if style_name == 'Title':
-            for run in p.runs:
-                run.font.highlight_color = WD_COLOR_INDEX.YELLOW
-            continue
-        if style_name in ('Heading 1', 'Heading 2'):
-            continue  # standard section labels unchanged; leave unhighlighted for readability
-        if not text:
-            continue
-        if in_references:
-            if 'Miyatake' in text:
-                for run in p.runs:
-                    run.font.highlight_color = WD_COLOR_INDEX.YELLOW
-            continue
-        # all other body content: revised
-        for run in p.runs:
-            run.font.highlight_color = WD_COLOR_INDEX.YELLOW
-
-    document.save(OUT_DOCX)
-    print(f"[OK] marked-up manuscript written to {OUT_DOCX}")
+    pages = run_word_compare()
+    scrub_author_metadata()
+    print(f"[OK] Word-native tracked-changes manuscript written to {OUT_DOCX} ({pages} pages)")
 
 
 if __name__ == "__main__":
