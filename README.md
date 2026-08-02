@@ -1,8 +1,8 @@
-# Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan
+# Population Age Structure Explains the Ecological Association Between Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan
 **An Ecological Study**
 
-**都道府県単位の高齢者単独世帯率と大量輸液療法利用の関連：日本の生態学的研究**
-（人口高齢化構造・医療供給・夏季熱曝露で調整すると関連は減弱・消失）
+**人口高齢化構造が説明する、高齢者単独世帯率と大量輸液療法利用の生態学的関連：日本の生態学的研究**
+（都道府県単位の高齢者単独世帯率と大量輸液療法利用の関連は、人口高齢化構造によって大部分が説明される）
 
 ---
 
@@ -12,17 +12,17 @@
 
 This repository contains analysis code for a nationwide ecological study examining whether **elderly solo household rate** (the percentage of all households consisting of one person aged ≥65 years; referred to as "older-adult solo household rate" in the title) — a prefecture-level indicator of the burden of older adults living alone relative to all households, distinct from a direct individual-level measure of social isolation — is associated with **large-volume infusion therapy utilization** (NDB procedure code G004, ≥500 mL) across Japan's 47 prefectures, and whether this association persists after accounting for population age structure, healthcare supply, and summer heat exposure.
 
-**Key finding**: Elderly solo household rate was associated with infusion therapy utilization in the unadjusted analysis (β = 656.2; 95% CI, 326.9–985.6; *p* < 0.001). Adding prefectural ageing rate attenuated the estimate by 53.3% (β = 306.1; 95% CI, −71.3–683.5; *p* = 0.112), and the association was no longer statistically significant. Further adjustment for healthcare supply and official WBGT reduced the estimate toward zero (β = −9.4; 95% CI, −493.9–475.1; *p* = 0.970). These findings do not support an independent ecological association between living-alone indicators and infusion therapy utilization once population age structure is taken into account.
+**Key finding**: Elderly solo household rate was associated with infusion therapy utilization in the unadjusted analysis (β = 656.2; 95% CI, 326.9–985.6; *p* < 0.001), but this association was substantially explained by prefectural ageing rate (β = 306.1; 95% CI, −71.3–683.5; *p* = 0.112) and further attenuated toward zero after additional adjustment for healthcare supply and official WBGT (β = −9.4; 95% CI, −493.9–475.1; *p* = 0.970). These findings indicate that population age structure is a key driver of the apparent ecological association between elderly solo household rate and infusion therapy utilization.
 
 **Study design**: Ecological study | N = 47 prefectures | Fiscal Year 2023
 
-**Manuscript**: Saito H, Ohira T. Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan: An Ecological Study. *International Journal of Biometeorology* (Major Revision under review, 2026).
+**Manuscript**: Saito H, Ohira T. Population Age Structure Explains the Ecological Association Between Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan. *International Journal of Biometeorology* (Major Revision under review, 2026).
 
 ### 日本語
 
 本リポジトリは、都道府県単位（N = 47）の全国生態学研究の解析コードを公開するものです。**高齢者単独世帯率**（全世帯に占める65歳以上単独世帯率。個人レベルの社会的孤立の直接指標ではなく、全世帯に対する高齢独居の負荷を表す都道府県単位の指標）が**大量輸液療法利用**（NDB 手技コード G004、500 mL 以上）と関連するか、また人口高齢化構造・医療供給・夏季熱曝露で調整した後も関連が残るかを検証しました。
 
-**主要結果**: 高齢者単独世帯率は非調整解析で輸液療法実施率と関連しました（β = 656.2、95% CI: 326.9–985.6、*p* < 0.001）。都道府県高齢化率を追加すると推定値は53.3%減弱し（β = 306.1、95% CI: −71.3–683.5、*p* = 0.112）、統計的有意性は失われました。さらに医療供給・公式WBGTで調整するとゼロに近づきました（β = −9.4、95% CI: −493.9–475.1、*p* = 0.970）。人口構造を考慮すると、独居指標と輸液療法利用の間に独立した生態学的関連は支持されませんでした。
+**主要結果**: 高齢者単独世帯率は非調整解析で輸液療法実施率と関連しました（β = 656.2、95% CI: 326.9–985.6、*p* < 0.001）が、この関連は都道府県高齢化率によって大部分が説明され（β = 306.1、95% CI: −71.3–683.5、*p* = 0.112）、さらに医療供給・公式WBGTで調整するとゼロに近づきました（β = −9.4、95% CI: −493.9–475.1、*p* = 0.970）。これらの結果は、高齢者単独世帯率と輸液療法利用の見かけ上の生態学的関連において、人口高齢化構造が主要な説明要因であることを示しています。
 
 **研究デザイン**: 生態学的研究 | N = 47 都道府県 | 2023 年度（令和 5 年度）
 
@@ -154,7 +154,7 @@ If you use this code, please cite the associated manuscript and code repository:
 本コードを使用する場合は、論文とコードリポジトリの両方を引用してください：
 
 **Manuscript**:
-> Saito H, Ohira T. Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan: An Ecological Study. *International Journal of Biometeorology* (Major Revision under review, 2026).
+> Saito H, Ohira T. Population Age Structure Explains the Ecological Association Between Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan. *International Journal of Biometeorology* (Major Revision under review, 2026).
 
 **Code repository**:
 > Saito H. Analysis code for "Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan" [Software]. Zenodo. 2026. https://doi.org/10.5281/zenodo.20740374

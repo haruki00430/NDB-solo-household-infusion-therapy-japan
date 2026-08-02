@@ -59,7 +59,7 @@ def esc(cell: str) -> str:
 lines_out = []
 lines_out.append("# Response to Editor and Reviewers (Table Format)")
 lines_out.append("")
-lines_out.append('Manuscript: "Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan: An Ecological Study" (formerly "Are Heat-Health Systems Socially Blind? Social Isolation and Dehydration-Related Healthcare Utilization Across Japan")')
+lines_out.append('Manuscript: "Population Age Structure Explains the Ecological Association Between Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan" (formerly "Are Heat-Health Systems Socially Blind? Social Isolation and Dehydration-Related Healthcare Utilization Across Japan")')
 lines_out.append("")
 lines_out.append("Submission ID: 0cd18650-d5db-481f-b00b-bbde3cda74f7")
 lines_out.append("")

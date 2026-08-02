@@ -1,6 +1,6 @@
 # Response to Editor and Reviewers
 
-Manuscript: "Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan: An Ecological Study" (formerly "Are Heat-Health Systems Socially Blind? Social Isolation and Dehydration-Related Healthcare Utilization Across Japan")
+Manuscript: "Population Age Structure Explains the Ecological Association Between Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan" (formerly "Are Heat-Health Systems Socially Blind? Social Isolation and Dehydration-Related Healthcare Utilization Across Japan")
 
 Submission ID: 0cd18650-d5db-481f-b00b-bbde3cda74f7
 
@@ -14,7 +14,7 @@ All line numbers below refer to the revised clean manuscript (continuous line nu
 
 **Comment:** "We invite you to revise your paper, carefully addressing the comments from the reviewers and the editor. Please ensure the results are accurately reported, any overstated conclusions are rewritten and the limitations of the work fully explained."
 
-**Response:** We thank the Editor for this guidance and for the opportunity to revise our manuscript. We agree, and we have rewritten the manuscript so that every claim reflects the revised analysis. Specifically: (1) the title no longer asks "Are Heat-Health Systems Socially Blind?" and no longer implies that a warning system was evaluated (line 1); (2) the Abstract Results and Conclusions report both the unadjusted and adjusted estimates with 95% confidence intervals rather than significance alone (lines 39–55); (3) the outcome is now described throughout as large-volume infusion therapy utilization rather than a dehydration-specific label (Methods §2, lines 105–125); (4) the claim that social factors outperformed climatic indicators, the "socially blind" framing, and the sixfold-stronger comparison have all been removed; (5) the Limitations have been substantially expanded (Discussion, lines 323–360) to include the ecological design, the distinction between living alone and social isolation, the non-specificity of G004, the unavailability of a prefecture-by-age G004 table, the single unusual fiscal year, the width of the adjusted confidence intervals at N=47, residual confounding, prefecture-level climate averaging (including Hokkaido's multi-site aggregation), source-year differences across variables, and the ownership-versus-use limitation of air-conditioning data. We hope these revisions fully address the Editor's concerns, and we thank the Editor again for the clear guidance.
+**Response:** We thank the Editor for this guidance and for the opportunity to revise our manuscript. We agree, and we have rewritten the manuscript so that every claim reflects the revised analysis. Specifically: (1) the title no longer asks "Are Heat-Health Systems Socially Blind?" and no longer implies that a warning system was evaluated (line 1); (2) the Abstract Results and Conclusions report both the unadjusted and adjusted estimates with 95% confidence intervals rather than significance alone (lines 40–55); (3) the outcome is now described throughout as large-volume infusion therapy utilization rather than a dehydration-specific label (Methods §2, lines 107–127); (4) the claim that social factors outperformed climatic indicators, the "socially blind" framing, and the sixfold-stronger comparison have all been removed; (5) the Limitations have been substantially expanded (Discussion, lines 317–363) to include the ecological design, the distinction between living alone and social isolation, the non-specificity of G004, the unavailability of a prefecture-by-age G004 table, the single unusual fiscal year, the width of the adjusted confidence intervals at N=47, residual confounding, prefecture-level climate averaging (including Hokkaido's multi-site aggregation), source-year differences across variables, and the ownership-versus-use limitation of air-conditioning data. We hope these revisions fully address the Editor's concerns, and we thank the Editor again for the clear guidance.
 
 ---
 
@@ -28,13 +28,13 @@ Reviewer 1's overall comment: "I think it was an interesting topic… My main co
 
 > "Is this using prefecture level data, or individual data by prefecture? How many individuals does it include as in how many people live in each prefecture?"
 
-**Response:** We thank the reviewer for asking us to clarify this fundamental point. This was an ecological analysis of 47 prefectures rather than a study of individual participants; no individual-level data are used or available from NDB Open Data. We have clarified this explicitly at first mention and added the prefectural population range and the total population represented by the denominator data: the 47 prefectures ranged from approximately 0.5 million to 14.1 million in total 2023 population, together representing Japan's total population of approximately 124.4 million (Methods §1, lines 98–101).
+**Response:** We thank the reviewer for asking us to clarify this fundamental point. This was an ecological analysis of 47 prefectures rather than a study of individual participants; no individual-level data are used or available from NDB Open Data. We have clarified this explicitly at first mention and added the prefectural population range and the total population represented by the denominator data: the 47 prefectures ranged from approximately 0.5 million to 14.1 million in total 2023 population, together representing Japan's total population of approximately 124.4 million (Methods §1, lines 100–103).
 
 ### R1-2 (anchor: "ecological")
 
 > "Is Community-level social isolation an ecological factor, really?"
 
-**Response:** We thank the reviewer for this important and precise observation; we agree this framing was imprecise. We no longer describe the exposure as "social isolation"; the primary exposure is now explicitly described as a prefecture-level living-alone/household-composition indicator, and we distinguish living alone from social isolation throughout the Introduction and Discussion (Introduction, lines 80–84; Discussion, lines 294–301).
+**Response:** We thank the reviewer for this important and precise observation; we agree this framing was imprecise. We no longer describe the exposure as "social isolation"; the primary exposure is now explicitly described as a prefecture-level living-alone/household-composition indicator, and we distinguish living alone from social isolation throughout the Introduction and Discussion (Introduction, lines 82–86; Discussion, lines 294–301).
 
 ### R1-3 (anchor: "WBGT")
 
@@ -58,73 +58,73 @@ Reviewer 1's overall comment: "I think it was an interesting topic… My main co
 
 > "Write in full at first use."
 
-**Response:** We thank the reviewer for this reminder. "National Database (NDB) Open Data" is now spelled out at first use, in the Abstract (lines 28–29), and consistently thereafter in Methods §2 (lines 106–107).
+**Response:** We thank the reviewer for this reminder. "National Database (NDB) Open Data" is now spelled out at first use, in the Abstract (lines 29–30), and consistently thereafter in Methods §2 (lines 108–109).
 
 ### R1-7 (anchor: "2023")
 
 > "Is one year of data sufficient? What about year-on-year variability of environmental factors?"
 
-**Response:** We thank the reviewer for raising this important limitation; we agree, and we now state explicitly that 2023 was an unusually hot summer and that findings from a single fiscal year may not generalize to other years (Methods §1, lines 101–104; Discussion Limitations, lines 329–331).
+**Response:** We thank the reviewer for raising this important limitation; we agree, and we now state explicitly that 2023 was an unusually hot summer and that findings from a single fiscal year may not generalize to other years (Methods §1, lines 103–106; Discussion Limitations, lines 329–334).
 
 ### R1-8 (anchor: "measured at government meteorological stations")
 
 > "How were they measured? By whom?"
 
-**Response:** We thank the reviewer for asking us to clarify this. We now specify that heat exposure is based on official Ministry of the Environment WBGT monitoring-site observations (Methods §4, lines 136–139), replacing the prior unclear phrasing.
+**Response:** We thank the reviewer for asking us to clarify this. We now specify that heat exposure is based on official Ministry of the Environment WBGT monitoring-site observations (Methods §4, lines 138–141), replacing the prior unclear phrasing.
 
 ### R1-9 (anchor: "government meteorological stations")
 
 > "Is this the correction interpretation?" [sic]
 
-**Response:** We thank the reviewer for flagging this unclear wording. We revised this sentence for clarity and to correctly attribute the data source (Ministry of the Environment WBGT network rather than JMA temperature stations, for the heat-exposure variable) (Methods §4, lines 136–139).
+**Response:** We thank the reviewer for flagging this unclear wording. We revised this sentence for clarity and to correctly attribute the data source (Ministry of the Environment WBGT network rather than JMA temperature stations, for the heat-exposure variable) (Methods §4, lines 138–141).
 
 ### R1-10 (anchor: "summer season (June–September 2023)")
 
 > "Was this summer a typical summer? Not hotter than normal or cooler than normal? How do you know that?"
 
-**Response:** We thank the reviewer for this important point; we now state explicitly in the Limitations that 2023 was an atypically hot summer and that this limits generalizability (Methods §1, lines 101–104; Discussion Limitations, lines 329–331).
+**Response:** We thank the reviewer for this important point; we now state explicitly in the Limitations that 2023 was an atypically hot summer and that this limits generalizability (Methods §1, lines 103–106; Discussion Limitations, lines 329–334).
 
 ### R1-11 (anchor: heatwave-day definition sentence)
 
 > "Is this an appropriate definition of heatwave for Japan? Is this the Japan Met Agency definition? If not, why not use their definition?"
 
-**Response:** We thank the reviewer for this valuable and well-founded suggestion. We have replaced the original ad hoc "heatwave days" (maximum temperature ≥35°C) variable with official Ministry of the Environment WBGT-based metrics (days with daily maximum WBGT ≥28/31/33°C) as the primary heat metric and sensitivity heat metrics used in the revised analysis (Methods §4, lines 142–146). The former "heatwave days" variable is retained only as a descriptive, non-adjustment statistic in Table 1 for comparison with the original submission, and we no longer use the term "heatwave days" for the primary analysis.
+**Response:** We thank the reviewer for this valuable and well-founded suggestion. We have replaced the original ad hoc "heatwave days" (maximum temperature ≥35°C) variable with official Ministry of the Environment WBGT-based metrics (days with daily maximum WBGT ≥28/31/33°C) as the primary heat metric and sensitivity heat metrics used in the revised analysis (Methods §4, lines 144–148). The former "heatwave days" variable is retained only as a descriptive, non-adjustment statistic in Table 1 for comparison with the original submission, and we no longer use the term "heatwave days" for the primary analysis.
 
 ### R1-12 (anchor: "Patel et al. 2013; Liljegren et al. 2008")
 
 > "What are these references for?"
 
-**Response:** We thank the reviewer for this question. These citations, which supported the original simplified WBGT approximation formula, have been removed along with that formula, since we now use official Ministry of the Environment WBGT data (Methods §4, lines 136–139).
+**Response:** We thank the reviewer for this question. These citations, which supported the original simplified WBGT approximation formula, have been removed along with that formula, since we now use official Ministry of the Environment WBGT data (Methods §4, lines 138–141).
 
 ### R1-13 (anchor: "rapid-change days" definition)
 
 > "Is there a reference for this choice of variable?"
 
-**Response:** We thank the reviewer for this question. The "rapid-change days" variable has been removed from the primary analysis in this revision; our climate variables are now limited to the WBGT threshold and cumulative-excess metrics used in the revised analysis, described in Methods §4 (lines 135–146).
+**Response:** We thank the reviewer for this question. The "rapid-change days" variable has been removed from the primary analysis in this revision; our climate variables are now limited to the WBGT threshold and cumulative-excess metrics used in the revised analysis, described in Methods §4 (lines 137–148).
 
 ### R1-14 (anchor: air-conditioning prevalence sentence)
 
 > "Was this also at prefecture level?"
 
-**Response:** We thank the reviewer for this question. Yes; air-conditioning prevalence (2014 survey) is prefecture-level, as now clarified in Methods §5 (lines 157–160), though this variable is retained only as background/descriptive context and is not part of the primary O-A–O-D models (Discussion Limitations, lines 349–354).
+**Response:** We thank the reviewer for this question. Yes; air-conditioning prevalence (2014 survey) is prefecture-level, as now clarified in Methods §5 (lines 159–162), though this variable is retained only as background/descriptive context and is not part of the primary O-A–O-D models (Discussion Limitations, lines 355–360).
 
 ### R1-15 (anchor: "Aging rate")
 
 > "Do you mean 'Age'?"
 
-**Response:** We thank the reviewer for asking us to clarify this. We mean the prefectural ageing rate, i.e., the percentage of the population aged ≥65 years. This variable, unavailable in the original submission, is now included as the primary demographic adjustment variable in the revised analysis and precisely defined (Methods §5, lines 151–153).
+**Response:** We thank the reviewer for asking us to clarify this. We mean the prefectural ageing rate, i.e., the percentage of the population aged ≥65 years. This variable, unavailable in the original submission, is now included as the primary demographic adjustment variable in the revised analysis and precisely defined (Methods §5, lines 153–155).
 
 ### R1-16 (anchor: "simple linear regression with infusion therapy utilization as the outcome")
 
 > "Are there any previous studies that have done this and found a potential relationship between ecological predictors and infusion therapy use? Is there an existing exposure response function? What justified the use of linear regression? Often there is a lag between heat exposure and health outcome. Why was this not taken into consideration here? A simple linear regression may not suffice."
 
-**Response:** We thank the reviewer for this thoughtful and detailed comment. We found no previous prefecture-level study establishing an exposure-response function between heat exposure (or living-alone indicators) and G004 infusion utilization; we therefore used a linear model as an interpretable first-order ecological specification and formally tested departures from linearity, rather than assuming linearity a priori. We added formal nonlinearity tests (quadratic term and natural cubic spline for the primary exposure) in the fully adjusted model; neither improved fit over the linear specification (Methods §6, lines 181–183; Results §4, lines 236–240). We acknowledge in the Limitations that our design is cross-sectional and cannot incorporate exposure-response lags, and we note this explicitly as an unaddressed limitation for future longitudinal work (Discussion, lines 354–357).
+**Response:** We thank the reviewer for this thoughtful and detailed comment. We found no previous prefecture-level study establishing an exposure-response function between heat exposure (or living-alone indicators) and G004 infusion utilization; we therefore used a linear model as an interpretable first-order ecological specification and formally tested departures from linearity, rather than assuming linearity a priori. We added formal nonlinearity tests (quadratic term and natural cubic spline for the primary exposure) in the fully adjusted model; neither improved fit over the linear specification (Methods §6, lines 183–185; Results §4, lines 238–242). We acknowledge in the Limitations that our design is cross-sectional and cannot incorporate exposure-response lags, and we note this explicitly as an unaddressed limitation for future longitudinal work (Discussion, lines 360–363).
 
 ### R1-17 (anchor: "This approach estimated policy-interpretable population-level associations rather than a predictive multivariable model.")
 
 > "Why is the former more useful than the latter?"
 
-**Response:** We thank the reviewer for this pointed question. This sentence and its underlying justification (avoiding multivariable adjustment because of collinearity) have been removed. We now explicitly state that we did not use multicollinearity as a reason to avoid adjustment, and we report cumulative multivariable models with VIFs for every covariate (Methods §6, lines 165–167; Table 2).
+**Response:** We thank the reviewer for this pointed question. This sentence and its underlying justification (avoiding multivariable adjustment because of collinearity) have been removed. We now explicitly state that we did not use multicollinearity as a reason to avoid adjustment, and we report cumulative multivariable models with VIFs for every covariate (Methods §6, lines 167–169; Table 2).
 
 ### R1-18 (anchor: "4/N (N = 47 = 0.085)")
 
@@ -136,7 +136,7 @@ Reviewer 1's overall comment: "I think it was an interesting topic… My main co
 
 > "What were the models adjusted for please?"
 
-**Response:** We thank the reviewer for this question. This is now stated explicitly and cumulatively for every model: O-A (exposure alone), O-B (+ ageing rate), O-C (+ ageing rate + hospital beds), O-D (+ ageing rate + hospital beds + WBGT ≥28°C days) (Methods §6, lines 162–165; Table 2).
+**Response:** We thank the reviewer for this question. This is now stated explicitly and cumulatively for every model: O-A (exposure alone), O-B (+ ageing rate), O-C (+ ageing rate + hospital beds), O-D (+ ageing rate + hospital beds + WBGT ≥28°C days) (Methods §6, lines 164–167; Table 2).
 
 ### R1-20 (anchor: "12.6 ±")
 
@@ -148,55 +148,55 @@ Reviewer 1's overall comment: "I think it was an interesting topic… My main co
 
 > "17 days in how many days?"
 
-**Response:** We thank the reviewer for this question. The original "heatwave days" variable (out of a ~122-day June–September period) has been replaced by official WBGT threshold-day counts as the primary heat-adjustment measure; the original variable is retained only descriptively (Methods §4, lines 143–146; Table 1).
+**Response:** We thank the reviewer for this question. The original "heatwave days" variable (out of a ~122-day June–September period) has been replaced by official WBGT threshold-day counts as the primary heat-adjustment measure; the original variable is retained only descriptively (Methods §4, lines 145–148; Table 1).
 
 ### R1-22 (anchor: "23.2")
 
 > "This is very cool."
 
-**Response:** We thank the reviewer for this observation. This comment referred to the original simplified WBGT approximation, which we have replaced with official Ministry of the Environment WBGT observations (Methods §4, lines 136–139); the revised summary statistics are reported in Table 1.
+**Response:** We thank the reviewer for this observation. This comment referred to the original simplified WBGT approximation, which we have replaced with official Ministry of the Environment WBGT observations (Methods §4, lines 138–141); the revised summary statistics are reported in Table 1.
 
 ### R1-23 (anchor: "89.7")
 
 > "This is a very high AC use."
 
-**Response:** We thank the reviewer for this observation. Air-conditioning prevalence (2014 survey, background variable only, not part of the primary adjusted models) is discussed in the Limitations with the caveat that ownership does not establish use (Discussion, lines 349–354).
+**Response:** We thank the reviewer for this observation. Air-conditioning prevalence (2014 survey, background variable only, not part of the primary adjusted models) is discussed in the Limitations with the caveat that ownership does not establish use (Discussion, lines 355–360).
 
 ### R1-24 (anchor: "Heat-health surveillance has traditionally focused on where heat occurs…")
 
 > "I concur with this finding, as do many heat physiologists."
 
-**Response:** We are grateful to the reviewer for this supportive and encouraging comment. We note that our revised findings qualify the original framing considerably (see response to R2 comments 1–5); the Discussion now emphasizes that any social-vulnerability indicator proposed for surveillance must first be shown to carry information beyond population age structure (Discussion, lines 311–317).
+**Response:** We are grateful to the reviewer for this supportive and encouraging comment. We note that our revised findings qualify the original framing considerably (see response to R2 comments 1–5); the Discussion now emphasizes that any social-vulnerability indicator proposed for surveillance must first be shown to carry information beyond population age structure (Discussion, lines 314–320).
 
 ### R1-25 (anchor: "elderly solo household rate was robustly associated with infusion therapy utilization")
 
 > "This finding should be toned down. AC was likely available in almost all of the dwellings of these individuals… Dehydration is not uncommon in older adults who may not drink water as often as people of other ages. This should be considered and discussed in the context of existing literature."
 
-**Response:** We thank the reviewer for this important and constructive comment; we agree, and this finding no longer stands as originally stated. The revised Results (§2, lines 210–225) show that the association was substantially attenuated by ageing-rate adjustment and became statistically non-robust after further adjustment. We retain a restrained discussion of physiological mechanisms (reduced thirst perception, thermoregulation) as background context (Discussion, lines 281–286) without claiming a robust independent living-alone effect.
+**Response:** We thank the reviewer for this important and constructive comment; we agree, and this finding no longer stands as originally stated. The revised Results (§2, lines 212–227) show that the association was substantially attenuated by ageing-rate adjustment and became statistically non-robust after further adjustment. We retain a restrained discussion of physiological mechanisms (reduced thirst perception, thermoregulation) as background context (Discussion, lines 281–286) without claiming a robust independent living-alone effect.
 
 ### R1-26 (anchor: "use air conditioning")
 
 > "So do they have AC but not turn it on?"
 
-**Response:** We thank the reviewer for this astute observation. We cannot distinguish ownership from use with these data; this is now stated explicitly as the final limitation in the Discussion (lines 349–354).
+**Response:** We thank the reviewer for this astute observation. We cannot distinguish ownership from use with these data; this is now stated explicitly as the final limitation in the Discussion (lines 355–360).
 
 ### R1-27 (anchor: "outreach and resource allocation")
 
 > "Is this by identifying which of the prefectures house the most number of socially isolated individuals?"
 
-**Response:** We thank the reviewer for this important point. The original policy recommendation to prioritize outreach based on this indicator has been removed from the Conclusions, since the underlying association was not robust to adjustment (Conclusions, lines 360–377).
+**Response:** We thank the reviewer for this important point. The original policy recommendation to prioritize outreach based on this indicator has been removed from the Conclusions, since the underlying association was not robust to adjustment (Conclusions, lines 366–381).
 
 ### R1-28 (anchor: "Infusion therapy is not heat-specific")
 
 > "Besides dehydration from heat exposure, what are the other reasons or medical conditions for infusion therapy? These should be discussed."
 
-**Response:** We thank the reviewer for this valuable suggestion. We have expanded this point: G004 large-volume infusion is used for volume repletion across a range of clinical contexts (e.g., perioperative fluid management, gastrointestinal illness, infections, general supportive care), not exclusively heat-related dehydration, and we no longer use a dehydration-specific outcome label (Methods §2, lines 108–111; Discussion, lines 323–326).
+**Response:** We thank the reviewer for this valuable suggestion. We have expanded this point: G004 large-volume infusion is used for volume repletion across a range of clinical contexts (e.g., perioperative fluid management, gastrointestinal illness, infections, general supportive care), not exclusively heat-related dehydration, and we no longer use a dehydration-specific outcome label (Methods §2, lines 110–113; Discussion, lines 326–329).
 
 ### R1-29 (anchor: "cooling support")
 
 > "Do you mean turn on AC? Can socially isolated people afford to use AC?"
 
-**Response:** We thank the reviewer for this thoughtful point. We have removed the specific policy recommendation referencing "cooling support" as a prescribed action, given that the underlying association is no longer supported after adjustment (Conclusions, lines 360–377).
+**Response:** We thank the reviewer for this thoughtful point. We have removed the specific policy recommendation referencing "cooling support" as a prescribed action, given that the underlying association is no longer supported after adjustment (Conclusions, lines 366–381).
 
 ### R1-30 (anchor: "causes")
 
@@ -208,7 +208,7 @@ Reviewer 1's overall comment: "I think it was an interesting topic… My main co
 
 > "Were none of these data available at prefecture level? That is a real pity as they would have enhanced the realities of the situation."
 
-**Response:** We thank the reviewer for this thoughtful comment. Healthcare access is now addressed directly via the healthcare-supply adjustment (general hospital beds and clinics per 100,000; Methods §5, lines 153–156; Results §2, lines 220–222). Socioeconomic status, chronic disease prevalence, medication use, housing, and urban-heat-island indicators were not available at prefecture level in a form suitable for this analysis and remain listed as limitations (Discussion, lines 333–337).
+**Response:** We thank the reviewer for this thoughtful comment. Healthcare access is now addressed directly via the healthcare-supply adjustment (general hospital beds and clinics per 100,000; Methods §5, lines 155–158; Results §2, lines 222–224). Socioeconomic status, chronic disease prevalence, medication use, housing, and urban-heat-island indicators were not available at prefecture level in a form suitable for this analysis and remain listed as limitations (Discussion, lines 336–340).
 
 ### R1-32 (anchor: "References")
 
@@ -246,34 +246,34 @@ Reviewer 2's overall comment: "This is an important and timely study… However,
 
 > "Population age structure is the main concern… Please age standardise the outcome or calculate it using an elderly denominator. At minimum, include prefectural ageing rate alongside elderly solo household rate and show how the estimate changes. Collinearity does not remove the need to address this confounding."
 
-**Response:** We thank the reviewer for this central and constructive comment; we agree, and this was the central analysis of this revision. We were unable to construct an age-standardized or older-population-specific G004 rate because prefecture-by-age cross-tabulated G004 counts are not publicly available in the 10th NDB Open Data (Methods §2, lines 115–118; see also our response to R2 Comment 6 below on the GitHub/data-availability point). Instead, we retained the originally submitted exposure and added prefectural ageing rate to the same model (Methods §5, lines 151–153; Results §2, lines 216–219; Table 2). The exposure coefficient changed from 656.2 (95% CI 326.9–985.6, p<0.001) to 306.1 (95% CI −71.3–683.5, p=0.112), a descriptive attenuation of 53.3%, and statistical significance was lost. We do not use collinearity as a reason to avoid adjustment; maximum VIF across all models was 3.01 (Results §2, line 225; Table 2), and we report the ageing-rate-adjusted estimate and its uncertainty explicitly rather than omitting it.
+**Response:** We thank the reviewer for this central and constructive comment; we agree, and this was the central analysis of this revision. We were unable to construct an age-standardized or older-population-specific G004 rate because prefecture-by-age cross-tabulated G004 counts are not publicly available in the 10th NDB Open Data (Methods §2, lines 117–120; see also our response to R2 Comment 6 below on the GitHub/data-availability point). Instead, we retained the originally submitted exposure and added prefectural ageing rate to the same model (Methods §5, lines 153–155; Results §2, lines 218–221; Table 2). The exposure coefficient changed from 656.2 (95% CI 326.9–985.6, p<0.001) to 306.1 (95% CI −71.3–683.5, p=0.112), a descriptive attenuation of 53.3%, and statistical significance was lost. We do not use collinearity as a reason to avoid adjustment; maximum VIF across all models was 3.01 (Results §2, line 225; Table 2), and we report the ageing-rate-adjusted estimate and its uncertainty explicitly rather than omitting it.
 
 ### R2 Comment 2
 
 > "Healthcare supply and regional treatment practices may also explain part of the association… Please add a measure such as hospital beds or clinics per capita."
 
-**Response:** We thank the reviewer for this valuable suggestion; we agree and added general hospital beds per 100,000 population (2023 Survey of Medical Institutions) as model O-C, and general clinics per 100,000 as a sensitivity analysis substituted for beds (Methods §5, lines 153–156; Results §2, lines 220–222; Online Resource 1). Adding healthcare supply further reduced the exposure coefficient to 94.1 (95% CI −302.4–490.6, p=0.642).
+**Response:** We thank the reviewer for this valuable suggestion; we agree and added general hospital beds per 100,000 population (2023 Survey of Medical Institutions) as model O-C, and general clinics per 100,000 as a sensitivity analysis substituted for beds (Methods §5, lines 155–158; Results §2, lines 222–224; Online Resource 1). Adding healthcare supply further reduced the exposure coefficient to 94.1 (95% CI −302.4–490.6, p=0.642).
 
 ### R2 Comment 3
 
 > "The stratified analysis needs fuller interpretation… Please test for nonlinearity, examine the influence of metropolitan prefectures, and discuss whether the result may reflect confounding."
 
-**Response:** We thank the reviewer for this comprehensive and constructive comment; we agree. We removed the median-split stratified analysis as a primary result and retained it only as an audit-only reproduction, explicitly labeled as not evidence of dose-response (Results §4, lines 238–241; Online Resource 1). We tested nonlinearity using a quadratic term and a natural cubic spline for the primary exposure in the fully adjusted (O-D) model; neither improved fit relative to the linear model (partial F p=0.142 and p=0.141, respectively; Results §4, lines 238–240). We examined the influence of individual prefectures via Cook's distance, leverage, and DFBETAs, and tested metropolitan exclusion (Tokyo, Osaka, Kanagawa jointly); the exposure estimate remained non-significant in all cases (Results §3, lines 227–236; Online Resource 1).
+**Response:** We thank the reviewer for this comprehensive and constructive comment; we agree. We removed the median-split stratified analysis as a primary result and retained it only as an audit-only reproduction, explicitly labeled as not evidence of dose-response (Results §4, lines 240–243; Online Resource 1). We tested nonlinearity using a quadratic term and a natural cubic spline for the primary exposure in the fully adjusted (O-D) model; neither improved fit relative to the linear model (partial F p=0.142 and p=0.141, respectively; Results §4, lines 240–242). We examined the influence of individual prefectures via Cook's distance, leverage, and DFBETAs, and tested metropolitan exclusion (Tokyo, Osaka, Kanagawa jointly); the exposure estimate remained non-significant in all cases (Results §3, lines 229–238; Online Resource 1).
 
 ### R2 Comment 4
 
 > "The claim that social factors outperform climatic indicators is not convincing with the current climate measures… Please use stronger measures, such as maximum based WBGT, days above a WBGT threshold, or heat degree days. If these cannot be added, remove the comparative claim…"
 
-**Response:** We thank the reviewer for this important and specific suggestion; we agree and have done both. We replaced the simplified daily-mean-temperature-based WBGT approximation with official daily-maximum WBGT observations from the Ministry of the Environment's Heat Illness Prevention Information site; for each monitoring site we counted the number of days meeting or exceeding each threshold, then averaged these site-specific day-counts within each prefecture (mean 17.9 sites; range 5–163) (Methods §4, lines 137–142). We used days with WBGT ≥28°C as the primary heat metric used in the revised analysis, with days ≥31°C, days ≥33°C, and cumulative WBGT excess as sensitivity/exploratory measures with Benjamini-Hochberg FDR correction (Methods §4, lines 142–145; Methods §6, lines 177–179). We have also removed the comparative claim that social factors outperform climatic indicators; the revised Discussion instead reports a restrained, FDR-qualified exploratory WBGT finding (Discussion, lines 298–301).
+**Response:** We thank the reviewer for this important and specific suggestion; we agree and have done both. We replaced the simplified daily-mean-temperature-based WBGT approximation with official daily-maximum WBGT observations from the Ministry of the Environment's Heat Illness Prevention Information site; for each monitoring site we counted the number of days meeting or exceeding each threshold, then averaged these site-specific day-counts within each prefecture (mean 17.9 sites; range 5–163) (Methods §4, lines 139–144). We used days with WBGT ≥28°C as the primary heat metric used in the revised analysis, with days ≥31°C, days ≥33°C, and cumulative WBGT excess as sensitivity/exploratory measures with Benjamini-Hochberg FDR correction (Methods §4, lines 144–147; Methods §6, lines 179–181). We have also removed the comparative claim that social factors outperform climatic indicators; the revised Discussion instead reports a restrained, FDR-qualified exploratory WBGT finding (Discussion, lines 302–305).
 
 ### R2 Comment 5
 
 > "The claimed sixfold difference from the negative control is not valid because the raw coefficients concern outcomes measured on different scales… Please remove the sixfold claim, report standardised comparisons, and reconsider the interpretation of this analysis."
 
-**Response:** We thank the reviewer for this important methodological correction; we agree and have removed the sixfold claim entirely. We renamed this analysis the "exploratory comparison-outcome analysis" (no longer "negative control") and report only standardized coefficients, Pearson r, R², and 95% CIs (Results §7, lines 261–266; Online Resource 1, Table S7). Under the primary (original) exposure, unadjusted, the standardized association with general outpatient utilization (β=0.424, 95% CI 0.088–0.760, R²=0.180, p=0.013) was only modestly smaller than the standardized association with the primary outcome (β=0.521, 95% CI 0.260–0.783, R²=0.272, p<0.001), not the sixfold difference originally reported from incomparable raw coefficients. This does not support the originally claimed outcome specificity.
+**Response:** We thank the reviewer for this important methodological correction; we agree and have removed the sixfold claim entirely. We renamed this analysis the "exploratory comparison-outcome analysis" (no longer "negative control") and report only standardized coefficients, Pearson r, R², and 95% CIs (Results §7, lines 263–268; Online Resource 1, Table S7). Under the primary (original) exposure, unadjusted, the standardized association with general outpatient utilization (β=0.424, 95% CI 0.088–0.760, R²=0.180, p=0.013) was only modestly smaller than the standardized association with the primary outcome (β=0.521, 95% CI 0.260–0.783, R²=0.272, p<0.001), not the sixfold difference originally reported from incomparable raw coefficients. This does not support the originally claimed outcome specificity.
 
 ### R2 Comment 6
 
 > "Infusion use is only a partial proxy for heat related illness… Please describe the outcome more cautiously as general dehydration related utilisation with a possible heat component, and temper the policy conclusions accordingly… The study should also be framed as hypothesis generating… A descriptive title would better match the ecological design… Please also explain the mismatch among the 2014, 2020, and 2023 variables and correct the GitHub link containing 'XXX'."
 
-**Response:** We thank the reviewer for these detailed and constructive comments; we agree. The outcome is now described throughout as large-volume infusion therapy utilization (procedure code G004, ≥500 mL), explicitly noted as not specific to heat illness or dehydration (Methods §2, lines 105–111; Discussion, lines 323–326). The title has been changed to a descriptive, non-evaluative form that does not imply direct evaluation of a warning system (line 1). We have explained the source-year alignment for each variable in the Limitations (Discussion, lines 340–345: 2020 Census for household composition and the primary exposure; 2023 population estimates for the outcome denominator and ageing rate; 2023 Survey of Medical Institutions for healthcare supply; 2014 survey for air-conditioning ownership, not used in the primary models). Regarding the GitHub link: we agree that "XXX" could read as an unfilled placeholder. We have renamed the repository and corrected the URL in the Data Availability statement, which now reads https://github.com/haruki00430/NDB-solo-household-infusion-therapy-japan (Data Availability, lines 391–394); the prior URL redirects automatically to the new one. We also now explicitly frame the study as hypothesis-generating in the Discussion and Conclusions, given the ecological, cross-sectional, and single-year design (Discussion, lines 352–353). We thank the reviewer once more for the depth and rigor of this review, which has substantially improved the manuscript.
+**Response:** We thank the reviewer for these detailed and constructive comments; we agree. The outcome is now described throughout as large-volume infusion therapy utilization (procedure code G004, ≥500 mL), explicitly noted as not specific to heat illness or dehydration (Methods §2, lines 107–113; Discussion, lines 326–329). The title has been changed to a descriptive, non-evaluative form that does not imply direct evaluation of a warning system (line 1). We have explained the source-year alignment for each variable in the Limitations (Discussion, lines 346–351: 2020 Census for household composition and the primary exposure; 2023 population estimates for the outcome denominator and ageing rate; 2023 Survey of Medical Institutions for healthcare supply; 2014 survey for air-conditioning ownership, not used in the primary models). Regarding the GitHub link: we agree that "XXX" could read as an unfilled placeholder. We have renamed the repository and corrected the URL in the Data Availability statement, which now reads https://github.com/haruki00430/NDB-solo-household-infusion-therapy-japan (Data Availability, lines 395–398); the prior URL redirects automatically to the new one. We also now explicitly frame the study as hypothesis-generating in the Discussion and Conclusions, given the ecological, cross-sectional, and single-year design (Discussion, lines 358–359). We thank the reviewer once more for the depth and rigor of this review, which has substantially improved the manuscript.

@@ -1,6 +1,6 @@
 # Online Resource 1 (Revised)
 
-Supplementary material for: "Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan: An Ecological Study"
+Supplementary material for: "Population Age Structure Explains the Ecological Association Between Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan"
 
 Machine-readable source data underlying every table and figure below, together with all analysis code, are provided in the openly available data and code repository cited in the main text's Data Availability statement.
 
