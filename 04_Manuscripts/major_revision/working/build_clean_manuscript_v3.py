@@ -125,7 +125,7 @@ REPLACEMENTS = {
 
     135: "Table 2. Hierarchical Regression Models: Elderly Solo Household Rate and Large-Volume Infusion Therapy Utilization (N = 47)",
 
-    138: "Model O-A: exposure alone. Model O-B: Model O-A + prefectural ageing rate. Model O-C: Model O-B + general hospital beds per 100,000. Model O-D: Model O-C + days with WBGT \u226528\u00b0C (each model cumulative). CI, confidence interval (HC3 robust); VIF, variance inflation factor; AICc, corrected Akaike information criterion. Using the 2020 Census population denominator (Online Resource 1, Table S3) yields a closely comparable Model O-A estimate; inferential statistics differ because this analysis uses HC3 robust standard errors.",
+    138: "N = 47 for all models. Model O-A: exposure alone. Model O-B: Model O-A + prefectural ageing rate. Model O-C: Model O-B + general hospital beds per 100,000. Model O-D: Model O-C + days with WBGT \u226528\u00b0C (each model cumulative). All confidence intervals are heteroskedasticity-consistent (HC3) robust; VIF, variance inflation factor; AICc, corrected Akaike information criterion. Using the 2020 Census population denominator (Online Resource 1, Table S3) yields a closely comparable Model O-A estimate; inferential statistics differ because this analysis uses HC3 robust standard errors.",
 
     141: "Fig. 1 Coefficient plot for elderly solo household rate across Models O-A through O-D, showing unstandardized coefficients with HC3 95% confidence intervals and a zero reference line.",
 
@@ -160,11 +160,11 @@ TABLE0_NEW_ROWS = [
 ]
 
 TABLE2_ROWS = [
-    ["Model", "Cumulative adjustment", "N", "Unstd. \u03b2 (HC3 95% CI)", "Std. \u03b2 (HC3 95% CI)", "p", "Exposure partial R\u00b2", "Adjusted R\u00b2", "AICc"],
-    ["O-A", "Unadjusted", "47", "656.2 (326.9, 985.6)", "0.521 (0.260, 0.783)", "<0.001", "0.272", "0.256", "853.2"],
-    ["O-B", "+ ageing rate", "47", "306.1 (-71.3, 683.5)", "0.243 (-0.057, 0.543)", "0.112", "0.056", "0.365", "847.1"],
-    ["O-C", "+ ageing rate + hospital beds", "47", "94.1 (-302.4, 490.6)", "0.075 (-0.240, 0.390)", "0.642", "0.004", "0.386", "846.9"],
-    ["O-D", "+ ageing rate + hospital beds + WBGT\u226528d", "47", "-9.4 (-493.9, 475.1)", "-0.007 (-0.392, 0.377)", "0.970", "<0.001", "0.422", "845.6"],
+    ["Model", "Added covariates", "\u03b2 (95% CI)", "Standardized \u03b2 (95% CI)", "p", "Exposure partial R\u00b2", "Adjusted R\u00b2", "AICc"],
+    ["O-A", "Unadjusted", "656.2 (326.9, 985.6)", "0.521 (0.260, 0.783)", "<0.001", "0.272", "0.256", "853.2"],
+    ["O-B", "+ ageing rate", "306.1 (-71.3, 683.5)", "0.243 (-0.057, 0.543)", "0.112", "0.056", "0.365", "847.1"],
+    ["O-C", "+ ageing rate + hospital beds", "94.1 (-302.4, 490.6)", "0.075 (-0.240, 0.390)", "0.642", "0.004", "0.386", "846.9"],
+    ["O-D", "+ ageing rate + hospital beds + WBGT\u226528d", "-9.4 (-493.9, 475.1)", "-0.007 (-0.392, 0.377)", "0.970", "<0.001", "0.422", "845.6"],
 ]
 
 
@@ -267,7 +267,7 @@ def main():
         cells = table0.add_row().cells
         for i, val in enumerate(row_data):
             cells[i].text = val
-    set_fixed_column_widths(table0, [2.2, 0.9, 0.35, 0.65, 0.65, 0.65, 0.65, 0.65])
+    set_fixed_column_widths(table0, [1.95, 0.75, 0.32, 0.58, 0.55, 0.55, 0.62, 0.65])
 
     # --- replace Table (regression, index 1) with new 9-column hierarchical table; delete old sensitivity table (index 2) ---
     old_table1 = document.tables[1]
@@ -285,7 +285,7 @@ def main():
                 for para in cells[i].paragraphs:
                     for run in para.runs:
                         run.bold = True
-    set_fixed_column_widths(new_table, [0.55, 1.25, 0.3, 0.95, 0.95, 0.45, 0.65, 0.55, 0.5])
+    set_fixed_column_widths(new_table, [0.6, 1.05, 1.0, 0.95, 0.55, 0.7, 0.65, 0.5])
     # re-bold header row (font-size reset in set_fixed_column_widths clears bold via new Pt but not bold flag; ensure bold retained)
     for cell in new_table.rows[0].cells:
         for para in cell.paragraphs:

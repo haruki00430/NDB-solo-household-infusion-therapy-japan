@@ -23,6 +23,7 @@ import zipfile
 import shutil
 
 import win32com.client
+from docx.oxml.ns import qn
 
 PROJECT_ROOT = Path(r"C:\Users\user\.ag-cursor-common\research_workspace\projects\NDB_Research_Hub\projects\NDB_XXX_heatwave_heatstroke")
 ORIGINAL_DOCX = PROJECT_ROOT / "04_Manuscripts" / "submission_package_IJB" / "Japan manuscript_main_IJB_anon.docx"
@@ -134,10 +135,72 @@ def strip_comments():
     shutil.move(tmp, OUT_DOCX)
 
 
+def accept_and_highlight_revised_tables():
+    """
+    Word's CompareDocuments diffs replaced tables cell-by-cell at the same
+    row/column position, not as a semantic "this table is gone, that one is
+    new" change. For Table 1 (revised in place) and Table 2 (different row
+    structure entirely -- O-A/O-B/O-C/O-D vs the original model list), this
+    produces unreadable interleaved insertions/deletions within cells and
+    a leftover 9-column table shape. Tables with no counterpart in the new
+    manuscript (fully superseded old sensitivity tables) render fine as-is
+    (entirely struck through, clearly legible as "removed"), so only tables
+    that contain at least one insertion are treated: deletions are dropped,
+    insertions are unwrapped (accepted), and the whole table is highlighted
+    yellow to flag it as revised-in-full rather than diffed cell-by-cell.
+    The response letter states explicitly that Table 1 and Table 2 were
+    replaced in full.
+    """
+    import docx
+    from docx.enum.text import WD_COLOR_INDEX
+
+    document = docx.Document(OUT_DOCX)
+    ins_tag = qn("w:ins")
+    del_tag = qn("w:del")
+    move_from_tag = qn("w:moveFrom")
+    move_to_tag = qn("w:moveTo")
+    range_marker_tags = [
+        qn("w:moveFromRangeStart"), qn("w:moveFromRangeEnd"),
+        qn("w:moveToRangeStart"), qn("w:moveToRangeEnd"),
+    ]
+
+    for table in document.tables:
+        tbl_el = table._tbl
+        has_insertion = tbl_el.find(f".//{ins_tag}") is not None
+        if not has_insertion:
+            continue  # fully-superseded old table: leave as a clean strikethrough deletion
+
+        # drop text deleted or moved away from this position
+        for tag in (del_tag, move_from_tag):
+            for el in list(tbl_el.iter(tag)):
+                el.getparent().remove(el)
+        # accept text inserted here or moved to this position (unwrap, keep content)
+        for tag in (ins_tag, move_to_tag):
+            for el in list(tbl_el.iter(tag)):
+                parent = el.getparent()
+                idx = list(parent).index(el)
+                for i, child in enumerate(list(el)):
+                    parent.insert(idx + i, child)
+                parent.remove(el)
+        # remove now-empty move range bookmarks
+        for tag in range_marker_tags:
+            for el in list(tbl_el.iter(tag)):
+                el.getparent().remove(el)
+
+        for row in table.rows:
+            for cell in row.cells:
+                for para in cell.paragraphs:
+                    for run in para.runs:
+                        run.font.highlight_color = WD_COLOR_INDEX.YELLOW
+
+    document.save(OUT_DOCX)
+
+
 def main():
     pages = run_word_compare()
     scrub_author_metadata()
     strip_comments()
+    accept_and_highlight_revised_tables()
     print(f"[OK] Word-native tracked-changes manuscript written to {OUT_DOCX} ({pages} pages)")
 
 
