@@ -89,9 +89,55 @@ def scrub_author_metadata():
     shutil.move(tmp, OUT_DOCX)
 
 
+def strip_comments():
+    """
+    The originally submitted base docx has Reviewer 1's inline review comments
+    embedded in it. CompareComments=False does not stop CompareDocuments from
+    carrying those pre-existing comment anchors into unchanged spans of the
+    output, so every regeneration re-introduces them. All 35 items are already
+    answered in the response letter, so the marked manuscript should show only
+    tracked changes, not a partial subset of reviewer comment balloons.
+    """
+    import re
+
+    tmp = str(OUT_DOCX) + ".tmp"
+    with zipfile.ZipFile(OUT_DOCX, "r") as zin:
+        names = zin.namelist()
+        data = {n: zin.read(n) for n in names}
+
+    comment_parts = {"word/comments.xml", "word/commentsExtended.xml", "word/commentsIds.xml"}
+
+    doc_xml = data["word/document.xml"].decode("utf-8")
+    doc_xml = re.sub(r'<w:commentRangeStart[^/]*/>', '', doc_xml)
+    doc_xml = re.sub(r'<w:commentRangeEnd[^/]*/>', '', doc_xml)
+    doc_xml = re.sub(r'<w:r>(?:(?!<w:r>|</w:r>).)*?<w:commentReference[^/]*/>.*?</w:r>', '', doc_xml, flags=re.DOTALL)
+    doc_xml = re.sub(r'<w:commentReference[^/]*/>', '', doc_xml)
+    data["word/document.xml"] = doc_xml.encode("utf-8")
+
+    for part in comment_parts:
+        data.pop(part, None)
+    names = [n for n in names if n not in comment_parts]
+
+    rels_path = "word/_rels/document.xml.rels"
+    rels_xml = data[rels_path].decode("utf-8")
+    rels_xml = re.sub(r'<Relationship[^>]*Target="comments[^"]*"[^>]*/>', '', rels_xml)
+    data[rels_path] = rels_xml.encode("utf-8")
+
+    ct_path = "[Content_Types].xml"
+    ct_xml = data[ct_path].decode("utf-8")
+    ct_xml = re.sub(r'<Override PartName="/word/comments[^"]*"[^>]*/>', '', ct_xml)
+    data[ct_path] = ct_xml.encode("utf-8")
+
+    with zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as zout:
+        for n in names:
+            zout.writestr(n, data[n])
+    shutil.move(tmp, OUT_DOCX)
+
+
 def main():
     pages = run_word_compare()
     scrub_author_metadata()
+    strip_comments()
     print(f"[OK] Word-native tracked-changes manuscript written to {OUT_DOCX} ({pages} pages)")
 
 

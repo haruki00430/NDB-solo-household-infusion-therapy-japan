@@ -70,9 +70,9 @@ Cook's distance threshold (4/N) = 0.085. Hokkaido: Cook's D = 0.667 (leverage 0.
 
 Quadratic term: partial F p = 0.142, AICc 845.6 (linear) vs 845.9 (quadratic). Natural cubic spline (df=3): p = 0.141, AICc 845.9. See Figure S2 for the predicted curve with 95% confidence band.
 
-### Audit-only median-split reproduction (NOT a primary result)
+### Supplementary median-split analysis (reported for transparency; not a primary result)
 
-High stratum (≥ median): β = -192.9 (95% CI -1060.4, 674.6), p = 0.647. Low stratum (< median): β = 20.7 (95% CI -973.9, 1015.3), p = 0.966. Neither stratum shows a significant association under full adjustment; this analysis does not support dose-response and reproduces the original manuscript's stratified approach only for audit purposes.
+High stratum (≥ median): β = -192.9 (95% CI -1060.4, 674.6), p = 0.647. Low stratum (< median): β = 20.7 (95% CI -973.9, 1015.3), p = 0.966. Neither stratum shows a significant association under full adjustment; this analysis does not support dose-response and is reported here for transparency alongside the originally submitted stratified approach.
 
 ## Table S6. Exploratory WBGT metrics with FDR correction
 

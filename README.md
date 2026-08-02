@@ -10,9 +10,9 @@
 
 ### English
 
-This repository contains analysis code for a nationwide ecological study examining whether **prefecture-level older-adult solo household rate** — a community-level marker of social isolation — is associated with **large-volume infusion therapy utilization** (NDB procedure code G004, ≥500 mL) across Japan's 47 prefectures, and whether this association persists after accounting for population age structure, healthcare supply, and summer heat exposure.
+This repository contains analysis code for a nationwide ecological study examining whether **elderly solo household rate** (the percentage of all households consisting of one person aged ≥65 years; referred to as "older-adult solo household rate" in the title) — a prefecture-level indicator of the burden of older adults living alone relative to all households, distinct from a direct individual-level measure of social isolation — is associated with **large-volume infusion therapy utilization** (NDB procedure code G004, ≥500 mL) across Japan's 47 prefectures, and whether this association persists after accounting for population age structure, healthcare supply, and summer heat exposure.
 
-**Key finding**: Older-adult solo household rate was associated with infusion therapy utilization in the unadjusted analysis (β = 656.2; 95% CI, 326.9–985.6; *p* < 0.001). Adding prefectural ageing rate attenuated the estimate by 53.3% (β = 306.1; 95% CI, −71.3–683.5; *p* = 0.112), and the association was no longer statistically significant. Further adjustment for healthcare supply and official WBGT reduced the estimate toward zero (β = −9.4; 95% CI, −493.9–475.1; *p* = 0.970). These findings do not support an independent ecological association between living-alone indicators and infusion therapy utilization once population age structure is taken into account.
+**Key finding**: Elderly solo household rate was associated with infusion therapy utilization in the unadjusted analysis (β = 656.2; 95% CI, 326.9–985.6; *p* < 0.001). Adding prefectural ageing rate attenuated the estimate by 53.3% (β = 306.1; 95% CI, −71.3–683.5; *p* = 0.112), and the association was no longer statistically significant. Further adjustment for healthcare supply and official WBGT reduced the estimate toward zero (β = −9.4; 95% CI, −493.9–475.1; *p* = 0.970). These findings do not support an independent ecological association between living-alone indicators and infusion therapy utilization once population age structure is taken into account.
 
 **Study design**: Ecological study | N = 47 prefectures | Fiscal Year 2023
 
@@ -20,7 +20,7 @@ This repository contains analysis code for a nationwide ecological study examini
 
 ### 日本語
 
-本リポジトリは、都道府県単位（N = 47）の全国生態学研究の解析コードを公開するものです。**高齢者単独世帯率**（社会的孤立の地域指標）が**大量輸液療法利用**（NDB 手技コード G004、500 mL 以上）と関連するか、また人口高齢化構造・医療供給・夏季熱曝露で調整した後も関連が残るかを検証しました。
+本リポジトリは、都道府県単位（N = 47）の全国生態学研究の解析コードを公開するものです。**高齢者単独世帯率**（全世帯に占める65歳以上単独世帯率。個人レベルの社会的孤立の直接指標ではなく、全世帯に対する高齢独居の負荷を表す都道府県単位の指標）が**大量輸液療法利用**（NDB 手技コード G004、500 mL 以上）と関連するか、また人口高齢化構造・医療供給・夏季熱曝露で調整した後も関連が残るかを検証しました。
 
 **主要結果**: 高齢者単独世帯率は非調整解析で輸液療法実施率と関連しました（β = 656.2、95% CI: 326.9–985.6、*p* < 0.001）。都道府県高齢化率を追加すると推定値は53.3%減弱し（β = 306.1、95% CI: −71.3–683.5、*p* = 0.112）、統計的有意性は失われました。さらに医療供給・公式WBGTで調整するとゼロに近づきました（β = −9.4、95% CI: −493.9–475.1、*p* = 0.970）。人口構造を考慮すると、独居指標と輸液療法利用の間に独立した生態学的関連は支持されませんでした。
 
@@ -34,7 +34,7 @@ This repository contains analysis code for a nationwide ecological study examini
 |---|---|---|
 | NDB Open Data No.10 (MHLW, FY2023) | Large-volume infusion therapy rate (G004, ≥500 mL) | 輸液療法算定回数 |
 | e-Stat: Population estimates, Oct 1, 2023 (Statistics Bureau) | Total population, population 65+, ageing rate | 総人口・65歳以上人口・高齢化率 |
-| 2020 National Census (Statistics Bureau) | Older-adult solo household rate (primary exposure); legacy elderly solo household rate (sensitivity) | 高齢者単独世帯率（新曝露）・旧曝露（感度分析用） |
+| 2020 National Census (Statistics Bureau) | Elderly solo household rate: percentage of all households consisting of one person aged ≥65 years (primary exposure); alternative exposure: percentage of the population aged ≥65 years living alone (sensitivity analysis) | 高齢者単独世帯率：全世帯に占める65歳以上単独世帯率（主要曝露）／代替曝露：65歳以上人口に占める独居者割合（感度分析） |
 | MHLW Survey of Medical Institutions 2023 (医療施設調査) | General hospital beds, general clinics per 100,000 population | 病床数・診療所数 |
 | Statistics Bureau: Social Indicators by Prefecture | Population density | 人口密度 |
 | Ministry of the Environment (official WBGT observations, Jun–Sep 2023) | Daily maximum WBGT day-counts (≥28/31/33°C) | 公式WBGT実況値 |
