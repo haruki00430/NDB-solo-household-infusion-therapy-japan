@@ -54,6 +54,25 @@ def add_horizontal_rule(document):
     pPr.append(pBdr)
 
 
+def set_row_repeat_header(row):
+    trPr = row._tr.get_or_add_trPr()
+    tblHeader = OxmlElement("w:tblHeader")
+    tblHeader.set(qn("w:val"), "true")
+    trPr.append(tblHeader)
+
+
+def set_row_cant_split(row):
+    trPr = row._tr.get_or_add_trPr()
+    cantSplit = OxmlElement("w:cantSplit")
+    trPr.append(cantSplit)
+
+
+def set_paragraph_keep_next(paragraph):
+    pPr = paragraph._p.get_or_add_pPr()
+    keepNext = OxmlElement("w:keepNext")
+    pPr.append(keepNext)
+
+
 def add_table(document, lines):
     rows = [ln.strip().strip("|").split("|") for ln in lines if ln.strip()]
     rows = [[c.strip() for c in row] for row in rows]
@@ -65,7 +84,8 @@ def add_table(document, lines):
     table = document.add_table(rows=0, cols=ncols)
     table.style = "Light Grid Accent 1" if "Light Grid Accent 1" in [s.name for s in document.styles] else None
     for i, row in enumerate(rows):
-        cells = table.add_row().cells
+        table_row = table.add_row()
+        cells = table_row.cells
         for j, val in enumerate(row[:ncols]):
             cells[j].text = ""
             p = cells[j].paragraphs[0]
@@ -73,6 +93,17 @@ def add_table(document, lines):
             if i == 0:
                 for run in p.runs:
                     run.bold = True
+        # repeat the header row on every page the table spans
+        if i == 0:
+            set_row_repeat_header(table_row)
+        # never split a single row across a page break
+        set_row_cant_split(table_row)
+        # chain keepNext through every row except the last so the whole
+        # table is kept together on one page whenever it fits
+        if i < len(rows) - 1:
+            for cell in cells:
+                for p in cell.paragraphs:
+                    set_paragraph_keep_next(p)
     document.add_paragraph()
 
 
@@ -98,16 +129,19 @@ def convert(md_path: Path, out_path: Path, title: str = None):
             i += 1
             continue
 
-        if stripped.startswith("### "):
-            document.add_heading(stripped[4:], level=3)
-            i += 1
-            continue
-        if stripped.startswith("## "):
-            document.add_heading(stripped[3:], level=2)
-            i += 1
-            continue
-        if stripped.startswith("# "):
-            document.add_heading(stripped[2:], level=1)
+        if stripped.startswith(("### ", "## ", "# ")):
+            if stripped.startswith("### "):
+                level, heading_text = 3, stripped[4:]
+            elif stripped.startswith("## "):
+                level, heading_text = 2, stripped[3:]
+            else:
+                level, heading_text = 1, stripped[2:]
+            heading = document.add_heading(heading_text.strip(), level=level)
+            j = i + 1
+            while j < n and not lines[j].strip():
+                j += 1
+            if j < n and lines[j].strip().startswith("|"):
+                set_paragraph_keep_next(heading)
             i += 1
             continue
 

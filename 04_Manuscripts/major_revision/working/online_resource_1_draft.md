@@ -84,7 +84,7 @@ High stratum (≥ median): β = -192.9 (95% CI -1060.4, 674.6), p = 0.647. Low s
 
 WBGT ≥33 days showed a nominal association that did not remain significant after FDR correction.
 
-## Table S7. Exploratory comparison-outcome analysis (formerly "negative control")
+## Table S7. Exploratory comparison-outcome analysis
 
 | Outcome | Pearson r | R² | Standardized β (95% CI) | p |
 |---|---|---|---|---|

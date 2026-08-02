@@ -50,7 +50,8 @@ def main():
     ax.set_xlabel("Original-exposure coefficient (HC3 95% CI)\nInfusion rate per 100,000 per percentage-point")
     ax.set_title("Original exposure (elderly solo household %):\ncoefficient across O-A→O-D adjustment")
     for i, (_, row) in enumerate(sub.iterrows()):
-        ax.annotate(f"p={row['p_value']:.3f}", (row["ci_high"], i), textcoords="offset points", xytext=(6, 0), fontsize=8, va="center")
+        p_label = "p<0.001" if row["p_value"] < 0.001 else f"p={row['p_value']:.3f}"
+        ax.annotate(p_label, (row["ci_high"], i), textcoords="offset points", xytext=(6, 0), fontsize=8, va="center")
     fig.tight_layout()
     fig.savefig(RESULTS_DIR / "figures" / "figure_original_exposure_coefficients.png", dpi=200)
     plt.close(fig)
