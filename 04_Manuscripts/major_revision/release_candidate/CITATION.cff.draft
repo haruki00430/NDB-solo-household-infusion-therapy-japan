@@ -12,7 +12,7 @@ date-released: "2026-08-01"
 doi: "10.5281/zenodo.21739792"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.20740375"
+    value: "10.5281/zenodo.20740374"
     description: "Concept DOI (all versions)"
 repository-code: "https://github.com/haruki00430/NDB-solo-household-infusion-therapy-japan"
 license: MIT

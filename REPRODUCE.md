@@ -169,7 +169,7 @@ quarto render Manuscript_heatwave_social_isolation_final.qmd --to html
 ## Code Archive / コードアーカイブ
 
 Analysis code is archived on Zenodo:  
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20740375.svg)](https://doi.org/10.5281/zenodo.20740375)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20740374.svg)](https://doi.org/10.5281/zenodo.20740374)
 
 ---
 

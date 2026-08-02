@@ -157,9 +157,9 @@ If you use this code, please cite the associated manuscript and code repository:
 > Saito H, Ohira T. Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan: An Ecological Study. *International Journal of Biometeorology* (Major Revision under review, 2026).
 
 **Code repository**:
-> Saito H. Analysis code for "Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan" [Software]. Zenodo. 2026. https://doi.org/10.5281/zenodo.20740375
+> Saito H. Analysis code for "Prefecture-Level Older-Adult Solo Household Rate and Large-Volume Infusion Therapy Utilization in Japan" [Software]. Zenodo. 2026. https://doi.org/10.5281/zenodo.20740374
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20740375.svg)](https://doi.org/10.5281/zenodo.20740375)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20740374.svg)](https://doi.org/10.5281/zenodo.20740374)
 
 ---
 

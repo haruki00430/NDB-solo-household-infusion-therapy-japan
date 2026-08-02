@@ -192,7 +192,7 @@ The authors declare no conflicts of interest.
 
 ## Data Availability
 
-The NDB Open Data used in this analysis are publicly available from the Ministry of Health, Labour and Welfare of Japan (https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177182.html). The analysis code, derived data, and provenance records are openly available on GitHub (https://github.com/haruki00430/NDB-solo-household-infusion-therapy-japan) and archived on Zenodo (https://doi.org/10.5281/zenodo.20740375), which always resolves to the most recent version.
+The NDB Open Data used in this analysis are publicly available from the Ministry of Health, Labour and Welfare of Japan (https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000177182.html). The analysis code, derived data, and provenance records are openly available on GitHub (https://github.com/haruki00430/NDB-solo-household-infusion-therapy-japan) and archived on Zenodo (https://doi.org/10.5281/zenodo.20740374), which always resolves to the most recent version.
 
 ## Author Contributions
 
